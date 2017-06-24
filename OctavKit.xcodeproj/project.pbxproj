@@ -7,7 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		OBJ_20 /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* OctavKit.swift */; };
+		1E4D5A231F0C0E4600D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
+		1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */; };
+		1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */; };
+		1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A401F0C0E9900D2453D /* OctavKit.swift */; };
+		1E4D5A4D1F0C0E9900D2453D /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A421F0C0E9900D2453D /* Conference.swift */; };
+		1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A431F0C0E9900D2453D /* Id.swift */; };
+		1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A441F0C0E9900D2453D /* Room.swift */; };
+		1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A451F0C0E9900D2453D /* Session.swift */; };
+		1E4D5A511F0C0E9900D2453D /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A461F0C0E9900D2453D /* Speaker.swift */; };
+		1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */; };
+		1E4D5A531F0C0E9900D2453D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A491F0C0E9900D2453D /* Request.swift */; };
+		1E4D5A561F0C179900D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
+		1E4D5A571F0C179900D2453D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
+		1E4D5A5A1F0C1B7900D2453D /* TokenHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A591F0C1B7900D2453D /* TokenHolder.swift */; };
+		44884BD91EFE3A1700E7682A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		OBJ_27 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* OctavKitTests.swift */; };
 		OBJ_29 /* OctavKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* OctavKit.framework */; };
 /* End PBXBuildFile section */
@@ -23,11 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4D5A221F0C0E4600D2453D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPI.swift; sourceTree = "<group>"; };
+		1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPIError.swift; sourceTree = "<group>"; };
+		1E4D5A401F0C0E9900D2453D /* OctavKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavKit.swift; sourceTree = "<group>"; };
+		1E4D5A421F0C0E9900D2453D /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		1E4D5A431F0C0E9900D2453D /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
+		1E4D5A441F0C0E9900D2453D /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		1E4D5A451F0C0E9900D2453D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		1E4D5A461F0C0E9900D2453D /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1E4D5A491F0C0E9900D2453D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		1E4D5A591F0C1B7900D2453D /* TokenHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenHolder.swift; sourceTree = "<group>"; };
+		44884BD81EFE3A1700E7682A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		OBJ_11 /* OctavKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_14 /* OctavKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = OctavKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_14 /* OctavKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = OctavKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* OctavKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				44884BD91EFE3A1700E7682A /* Himotoki.framework in Frameworks */,
+				1E4D5A231F0C0E4600D2453D /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1E4D5A561F0C179900D2453D /* Result.framework in Frameworks */,
+				1E4D5A571F0C179900D2453D /* Himotoki.framework in Frameworks */,
 				OBJ_29 /* OctavKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,14 +79,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4D5A3C1F0C0E9900D2453D /* api */ = {
+			isa = PBXGroup;
+			children = (
+				1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */,
+				1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */,
+				1E4D5A591F0C1B7900D2453D /* TokenHolder.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		1E4D5A411F0C0E9900D2453D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1E4D5A421F0C0E9900D2453D /* Conference.swift */,
+				1E4D5A431F0C0E9900D2453D /* Id.swift */,
+				1E4D5A441F0C0E9900D2453D /* Room.swift */,
+				1E4D5A451F0C0E9900D2453D /* Session.swift */,
+				1E4D5A461F0C0E9900D2453D /* Speaker.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1E4D5A471F0C0E9900D2453D /* request */ = {
+			isa = PBXGroup;
+			children = (
+				1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */,
+				1E4D5A491F0C0E9900D2453D /* Request.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		44884BD71EFE3A1700E7682A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E4D5A221F0C0E4600D2453D /* Result.framework */,
+				44884BD81EFE3A1700E7682A /* Himotoki.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* OctavKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_11 /* OctavKitTests.swift */,
 			);
-			name = OctavKitTests;
-			path = Tests/OctavKitTests;
-			sourceTree = SOURCE_ROOT;
+			path = OctavKitTests;
+			sourceTree = "<group>";
 		};
 		OBJ_12 /* Products */ = {
 			isa = PBXGroup;
@@ -67,32 +136,35 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				OBJ_6 /* Package.swift */,
+				44884BD71EFE3A1700E7682A /* Frameworks */,
+				OBJ_12 /* Products */,
 				OBJ_7 /* Sources */,
 				OBJ_9 /* Tests */,
-				OBJ_12 /* Products */,
+				OBJ_6 /* Package.swift */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* OctavKit.swift */,
+				1E4D5A3C1F0C0E9900D2453D /* api */,
+				1E4D5A411F0C0E9900D2453D /* model */,
+				1E4D5A471F0C0E9900D2453D /* request */,
+				1E4D5A401F0C0E9900D2453D /* OctavKit.swift */,
 			);
 			path = Sources;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 		OBJ_9 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* OctavKitTests */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
+			path = Tests;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -103,6 +175,7 @@
 			buildPhases = (
 				OBJ_19 /* Sources */,
 				OBJ_21 /* Frameworks */,
+				44884BDA1EFE3A2900E7682A /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -119,6 +192,7 @@
 			buildPhases = (
 				OBJ_26 /* Sources */,
 				OBJ_28 /* Frameworks */,
+				1E4D5A581F0C17AB00D2453D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,7 +219,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -156,12 +230,56 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E4D5A581F0C17AB00D2453D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		44884BDA1EFE3A2900E7682A /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_20 /* OctavKit.swift in Sources */,
+				1E4D5A5A1F0C1B7900D2453D /* TokenHolder.swift in Sources */,
+				1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */,
+				1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */,
+				1E4D5A531F0C0E9900D2453D /* Request.swift in Sources */,
+				1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */,
+				1E4D5A511F0C0E9900D2453D /* Speaker.swift in Sources */,
+				1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */,
+				1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */,
+				1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */,
+				1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */,
+				1E4D5A4D1F0C0E9900D2453D /* Conference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +309,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKit_Info.plist;
@@ -212,6 +331,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKit_Info.plist;
@@ -229,10 +349,12 @@
 		OBJ_24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKitTests_Info.plist;
@@ -246,10 +368,12 @@
 		OBJ_25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKitTests_Info.plist;

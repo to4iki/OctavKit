@@ -1,7 +1,10 @@
-// swift-tools-version:3.1
-
 import PackageDescription
 
 let package = Package(
-    name: "OctavKit"
+    name: "OctavKit",
+    dependencies: [
+        .Package(url: "https://github.com/ikesyo/Himotoki.git", majorVersion: 3),
+        .Package(url: "https://github.com/antitypical/Result.git", majorVersion: 3)
+    ],
+    swiftLanguageVersions: [3]
 )

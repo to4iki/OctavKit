@@ -1,14 +1,30 @@
 import XCTest
 @testable import OctavKit
 
-class OctavKitTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        XCTAssertEqual(OctavKit().text, "Hello, World!")
+final class OctavKitTests: XCTestCase {
+    override func setUp() {
+        OctavKit.setup(token: "xxxx")
+    }
+
+    // TODO: dummy api connection
+    /// Verification
+    func testSessions() {
+        let expectation = self.expectation(description: "sessions")
+
+        OctavKit.sessions { result in
+            switch result {
+            case .success(let value):
+                print("success: \(value.count)")
+                expectation.fulfill()
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
+
+        waitForExpectations(timeout: 3, handler: nil)
     }
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testSessions", testSessions),
     ]
 }
