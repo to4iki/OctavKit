@@ -4,6 +4,18 @@ public struct Venue {
     public let id: Id<Venue>
 }
 
+extension Venue: CustomStringConvertible {
+    public var description: String {
+        return "Venue(id: \(id))"
+    }
+}
+
+extension Venue: Equatable {
+    public static func == (lhs: Venue, rhs: Venue) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+
 public struct Room {
     public let id: Id<Room>
     public let venue: Venue
@@ -19,5 +31,20 @@ extension Room: Decodable {
             name: e <| "name",
             capacity: e <| "capacity"
         )
+    }
+}
+
+extension Room: CustomStringConvertible {
+    public var description: String {
+        return "Room(id: \(id), venue: \(venue), name: \(name), capacity: \(capacity))"
+    }
+}
+
+extension Room: Equatable {
+    public static func == (lhs: Room, rhs: Room) -> Bool {
+        return lhs.id == rhs.id &&
+            lhs.venue == rhs.venue &&
+            lhs.name == rhs.name &&
+            lhs.capacity == rhs.capacity
     }
 }

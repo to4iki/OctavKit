@@ -11,7 +11,6 @@
 		1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */; };
 		1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */; };
 		1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A401F0C0E9900D2453D /* OctavKit.swift */; };
-		1E4D5A4D1F0C0E9900D2453D /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A421F0C0E9900D2453D /* Conference.swift */; };
 		1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A431F0C0E9900D2453D /* Id.swift */; };
 		1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A441F0C0E9900D2453D /* Room.swift */; };
 		1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A451F0C0E9900D2453D /* Session.swift */; };
@@ -41,7 +40,6 @@
 		1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPI.swift; sourceTree = "<group>"; };
 		1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPIError.swift; sourceTree = "<group>"; };
 		1E4D5A401F0C0E9900D2453D /* OctavKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavKit.swift; sourceTree = "<group>"; };
-		1E4D5A421F0C0E9900D2453D /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		1E4D5A431F0C0E9900D2453D /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
 		1E4D5A441F0C0E9900D2453D /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		1E4D5A451F0C0E9900D2453D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		1E4D5A411F0C0E9900D2453D /* model */ = {
 			isa = PBXGroup;
 			children = (
-				1E4D5A421F0C0E9900D2453D /* Conference.swift */,
 				1E4D5A431F0C0E9900D2453D /* Id.swift */,
 				1E4D5A441F0C0E9900D2453D /* Room.swift */,
 				1E4D5A451F0C0E9900D2453D /* Session.swift */,
@@ -279,7 +276,6 @@
 				1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */,
 				1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */,
 				1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */,
-				1E4D5A4D1F0C0E9900D2453D /* Conference.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

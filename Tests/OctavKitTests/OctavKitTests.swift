@@ -4,6 +4,7 @@ import XCTest
 final class OctavKitTests: XCTestCase {
     override func setUp() {
         OctavKit.setup(conferenceId: "xxxx")
+        OctavKit.setLocal(Locale(identifier: "ja-JP"))
     }
 
     // TODO: dummy api connection
@@ -13,8 +14,9 @@ final class OctavKitTests: XCTestCase {
 
         OctavKit.sessions { result in
             switch result {
-            case .success(let value):
-                print("success: \(value.count)")
+            case .success(let response):
+                print("success count: \(response.count)")
+                print("success value: \(response)")
                 expectation.fulfill()
             case .failure(let error):
                 print("error: \(error)")

@@ -16,8 +16,11 @@ Swift toolkit for the Octav API.
 ## Usage
 
 ```swift
-// setup your conference id
+// Setup your conference id(required)
 OctavKit.setup(conferenceId: "YOUR_CONFERENCE_ID")
+
+// Set local(option)
+OctavKit.setLocal(Locale.current)
 
 // Session receives an instance of a type that conforms to Request.
 OctavKit.sessions { result in
