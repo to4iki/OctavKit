@@ -3,7 +3,7 @@ import XCTest
 
 final class OctavKitTests: XCTestCase {
     override func setUp() {
-        OctavKit.setup(token: "xxxx")
+        OctavKit.setup(conferenceId: "xxxx")
     }
 
     // TODO: dummy api connection

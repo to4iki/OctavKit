@@ -35,8 +35,12 @@ public final class OctavKit {
 }
 
 extension OctavKit {
-    public static func setup(token: String) {
-        TokenHolder.set(token)
+    public static func setup(conferenceId: String) {
+        ParamtersHolder.setConferenceId(conferenceId)
+    }
+
+    public static func setLocal(_ local: Locale) {
+        ParamtersHolder.setLocal(local)
     }
 
     public static func sessions(completion: @escaping (Result<[Session], OctavAPIError>) -> Void) {

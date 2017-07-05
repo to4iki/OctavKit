@@ -16,8 +16,8 @@ extension Request {
     }
 
     var parameters: Any? {
-        assert(!TokenHolder.value.isEmpty, "token set!")
-        return ["conference_id": TokenHolder.value]
+        assert(ParamtersHolder.settedConferenceId, "conferenceId set!")
+        return ParamtersHolder.dictionary
     }
 }
 

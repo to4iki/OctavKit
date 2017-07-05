@@ -17,7 +17,7 @@ Swift toolkit for the Octav API.
 
 ```swift
 // setup your conference id
-OctavKit.setup(token: "YOUR_CONFERENCE_ID")
+OctavKit.setup(conferenceId: "YOUR_CONFERENCE_ID")
 
 // Session receives an instance of a type that conforms to Request.
 OctavKit.sessions { result in
