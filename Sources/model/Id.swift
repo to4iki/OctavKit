@@ -13,3 +13,9 @@ extension Id: Equatable {
         return lhs.value == rhs.value
     }
 }
+
+extension Id: Hashable {
+    public var hashValue: Int {
+        return value.hashValue
+    }
+}

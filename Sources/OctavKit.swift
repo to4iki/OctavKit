@@ -39,8 +39,8 @@ extension OctavKit {
         ParamtersHolder.setConferenceId(conferenceId)
     }
 
-    public static func setLocal(_ local: Locale) {
-        ParamtersHolder.setLocal(local)
+    public static func setLocale(_ locale: Locale) {
+        ParamtersHolder.setLocale(locale)
     }
 
     public static func sessions(completion: @escaping (Result<[Session], OctavAPIError>) -> Void) {

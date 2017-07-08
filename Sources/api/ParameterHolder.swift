@@ -17,7 +17,7 @@ struct ParamtersHolder {
         dictionary[Key.conferenceId.rawValue] = value
     }
 
-    static func setLocal(_ value: Locale) {
+    static func setLocale(_ value: Locale) {
         guard let languageCode = value.languageCode else { return }
         dictionary[Key.lang.rawValue] = languageCode
     }

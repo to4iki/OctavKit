@@ -4,7 +4,7 @@ import XCTest
 final class OctavKitTests: XCTestCase {
     override func setUp() {
         OctavKit.setup(conferenceId: "xxxx")
-        OctavKit.setLocal(Locale(identifier: "ja-JP"))
+        OctavKit.setLocale(Locale(identifier: "ja-JP"))
     }
 
     // TODO: dummy api connection
