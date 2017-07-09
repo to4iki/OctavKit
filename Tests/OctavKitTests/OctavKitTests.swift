@@ -25,8 +25,25 @@ final class OctavKitTests: XCTestCase {
 
         waitForExpectations(timeout: 3, handler: nil)
     }
+    
+    func testSponsors() {
+        let expectation = self.expectation(description: "sponsors")
+        
+        OctavKit.sponsors { result in
+            switch result {
+            case .success(let response):
+                print("success count: \(response.count)")
+                print("success value: \(response)")
+                expectation.fulfill()
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
+        
+        waitForExpectations(timeout: 3, handler: nil)
+    }
 
     static var allTests = [
-        ("testSessions", testSessions),
+        ("testSessions", testSessions), ("testSponsors", testSponsors)
     ]
 }
