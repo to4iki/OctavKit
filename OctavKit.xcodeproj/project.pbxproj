@@ -21,6 +21,7 @@
 		1E4D5A561F0C179900D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
 		1E4D5A571F0C179900D2453D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */; };
+		1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */; };
 		44884BD91EFE3A1700E7682A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		OBJ_27 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* OctavKitTests.swift */; };
 		OBJ_29 /* OctavKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* OctavKit.framework */; };
@@ -49,6 +50,7 @@
 		1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		1E4D5A491F0C0E9900D2453D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterHolder.swift; sourceTree = "<group>"; };
+		1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
 		44884BD81EFE3A1700E7682A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		OBJ_11 /* OctavKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +86,6 @@
 			children = (
 				1E2D8B891F1141130025613F /* Date+ISO8601.swift */,
 			);
-			name = extension;
 			path = extension;
 			sourceTree = "<group>";
 		};
@@ -105,6 +106,7 @@
 				1E4D5A441F0C0E9900D2453D /* Room.swift */,
 				1E4D5A451F0C0E9900D2453D /* Session.swift */,
 				1E4D5A461F0C0E9900D2453D /* Speaker.swift */,
+				1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -278,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */,
 				1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */,
 				1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */,
 				1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */,

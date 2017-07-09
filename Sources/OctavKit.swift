@@ -47,4 +47,9 @@ extension OctavKit {
         let request = OctavAPI.Sessions()
         send(request, completion: completion)
     }
+    
+    public static func sponsors(completion: @escaping (Result<[Sponsor], OctavAPIError>) -> Void) {
+        let request = OctavAPI.Sponsors()
+        send(request, completion: completion)
+    }
 }
