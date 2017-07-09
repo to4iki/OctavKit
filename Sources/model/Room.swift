@@ -26,7 +26,7 @@ public struct Room {
     public let id: Id<Room>
     public let venue: Venue
     public let name: String
-    public let capacity: UInt
+    public let capacity: Int
 }
 
 extension Room: Decodable {

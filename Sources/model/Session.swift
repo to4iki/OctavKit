@@ -9,13 +9,17 @@ public struct Session {
     public let abstract: String
     public let memo: String?
     public let startsOn: Date
-    public let duration: UInt
+    public let duration: Int
     public let materialLevel: Level
     public let sporkenLanguage: Locale
     public let slideLanguage: Locale
     public let photoRelease: Bool
     public let recordingRelease: Bool
     public let materialsRelease: Bool
+
+    public var endsOn: Date {
+        return startsOn.add(second: duration)
+    }
 }
 
 extension Session {
