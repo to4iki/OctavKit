@@ -10,6 +10,7 @@ public struct Session {
     public let memo: String?
     public let startsOn: Date
     public let duration: UInt
+    public let materialLevel: Level
     public let sporkenLanguage: Locale
     public let slideLanguage: Locale
     public let photoRelease: Bool
@@ -18,7 +19,7 @@ public struct Session {
 }
 
 extension Session {
-    public enum Level {
+    public enum Level: String {
         case beginner
         case intermediate
         case advanced
@@ -47,6 +48,7 @@ extension Session: Decodable {
             memo: strictString(e <| "memo"),
             startsOn: Date(fromISO8601: e <| "starts_on")!,
             duration: e <| "duration",
+            materialLevel: Session.Level(rawValue: e <| "material_level")!,
             sporkenLanguage: Locale(identifier: e <| "spoken_language"),
             slideLanguage: Locale(identifier: e <| "slide_language"),
             photoRelease: isRelease(rawValue: e <| "photo_release"),
@@ -60,8 +62,8 @@ extension Session: CustomStringConvertible {
     public var description: String {
         return "Session(id: \(id), room: \(room), speaker: \(speaker), title: \(title), " +
         "abstract: \(abstract), memo: \(memo.debugDescription), startsOn: \(startsOn), duration: \(duration), " +
-        "sporkenLanguage: \(sporkenLanguage), slideLanguage: \(slideLanguage), photoRelease: \(photoRelease), " +
-        "recordingRelease: \(recordingRelease), materialsRelease: \(materialsRelease))"
+        "materialLevel: \(materialLevel.rawValue), sporkenLanguage: \(sporkenLanguage), slideLanguage: \(slideLanguage), " +
+        "photoRelease: \(photoRelease), recordingRelease: \(recordingRelease), materialsRelease: \(materialsRelease))"
     }
 }
 
@@ -75,6 +77,7 @@ extension Session: Equatable {
             lhs.memo == rhs.memo &&
             lhs.startsOn == rhs.startsOn &&
             lhs.duration == rhs.duration &&
+            lhs.materialLevel.rawValue == rhs.materialLevel.rawValue &&
             lhs.sporkenLanguage == rhs.sporkenLanguage &&
             lhs.slideLanguage == rhs.slideLanguage &&
             lhs.photoRelease == rhs.photoRelease &&
