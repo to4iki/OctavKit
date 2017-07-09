@@ -37,3 +37,9 @@ extension Sponsor: Equatable {
             lhs.groupName == rhs.groupName
     }
 }
+
+extension Sponsor: Hashable {
+    public var hashValue: Int {
+        return id.hashValue
+    }
+}

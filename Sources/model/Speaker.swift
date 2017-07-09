@@ -43,3 +43,9 @@ extension Speaker: Equatable {
             lhs.timezone == rhs.timezone
     }
 }
+
+extension Speaker: Hashable {
+    public var hashValue: Int {
+        return id.hashValue
+    }
+}

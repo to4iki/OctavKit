@@ -16,6 +16,12 @@ extension Venue: Equatable {
     }
 }
 
+extension Venue: Hashable {
+    public var hashValue: Int {
+        return id.hashValue
+    }
+}
+
 public struct Room {
     public let id: Id<Room>
     public let venue: Venue
@@ -46,5 +52,11 @@ extension Room: Equatable {
             lhs.venue == rhs.venue &&
             lhs.name == rhs.name &&
             lhs.capacity == rhs.capacity
+    }
+}
+
+extension Room: Hashable {
+    public var hashValue: Int {
+        return id.hashValue
     }
 }

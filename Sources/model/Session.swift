@@ -85,3 +85,9 @@ extension Session: Equatable {
             lhs.materialsRelease == rhs.materialsRelease
     }
 }
+
+extension Session: Hashable {
+    public var hashValue: Int {
+        return id.hashValue
+    }
+}
