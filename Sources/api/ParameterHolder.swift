@@ -8,13 +8,18 @@ struct ParamtersHolder {
 
     private(set) static var dictionary: [String: Any] = [:]
     private init() {}
-
-    static var settedConferenceId: Bool {
-        return dictionary[Key.conferenceId.rawValue] != nil
+    
+    static var conferenceId: String {
+        get {
+            return dictionary[Key.conferenceId.rawValue] as! String
+        }
+        set {
+            dictionary[Key.conferenceId.rawValue] = newValue
+        }
     }
-
-    static func setConferenceId(_ value: String) {
-        dictionary[Key.conferenceId.rawValue] = value
+    
+    static var langCode: String? {
+        return dictionary[Key.lang.rawValue] as? String
     }
 
     static func setLocale(_ value: Locale) {

@@ -16,7 +16,6 @@ extension Request {
     }
 
     var parameters: Any? {
-        assert(ParamtersHolder.settedConferenceId, "conferenceId set!")
         return ParamtersHolder.dictionary
     }
 }

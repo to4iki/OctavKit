@@ -30,11 +30,7 @@ extension Sponsor: CustomStringConvertible {
 
 extension Sponsor: Equatable {
     public static func == (lhs: Sponsor, rhs: Sponsor) -> Bool {
-        return lhs.id == rhs.id &&
-            lhs.name == rhs.name &&
-            lhs.logoURL == rhs.logoURL &&
-            lhs.linkURL == rhs.linkURL &&
-            lhs.groupName == rhs.groupName
+        return lhs.id == rhs.id
     }
 }
 
