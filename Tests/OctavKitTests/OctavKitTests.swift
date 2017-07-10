@@ -25,10 +25,10 @@ final class OctavKitTests: XCTestCase {
 
         waitForExpectations(timeout: 3, handler: nil)
     }
-    
+
     func testSponsors() {
         let expectation = self.expectation(description: "sponsors")
-        
+
         OctavKit.sponsors { result in
             switch result {
             case .success(let response):
@@ -39,11 +39,27 @@ final class OctavKitTests: XCTestCase {
                 print("error: \(error)")
             }
         }
-        
+
+        waitForExpectations(timeout: 3, handler: nil)
+    }
+
+    func testConference() {
+        let expectation = self.expectation(description: "conference")
+
+        OctavKit.conference { result in
+            switch result {
+            case .success(let response):
+                print("success value: \(response)")
+                expectation.fulfill()
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
+
         waitForExpectations(timeout: 3, handler: nil)
     }
 
     static var allTests = [
-        ("testSessions", testSessions), ("testSponsors", testSponsors)
+        ("testSessions", testSessions), ("testSponsors", testSponsors), ("testConference", testConference)
     ]
 }

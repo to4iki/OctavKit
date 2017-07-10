@@ -36,7 +36,7 @@ public final class OctavKit {
 
 extension OctavKit {
     public static func setup(conferenceId: String) {
-        ParamtersHolder.setConferenceId(conferenceId)
+        ParamtersHolder.conferenceId = conferenceId
     }
 
     public static func setLocale(_ locale: Locale) {
@@ -50,6 +50,11 @@ extension OctavKit {
     
     public static func sponsors(completion: @escaping (Result<[Sponsor], OctavAPIError>) -> Void) {
         let request = OctavAPI.Sponsors()
+        send(request, completion: completion)
+    }
+    
+    public static func conference(completion: @escaping (Result<Conference, OctavAPIError>) -> Void) {
+        let request = OctavAPI.Lookup()
         send(request, completion: completion)
     }
 }

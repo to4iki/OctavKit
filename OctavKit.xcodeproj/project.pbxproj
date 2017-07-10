@@ -15,13 +15,16 @@
 		1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A431F0C0E9900D2453D /* Id.swift */; };
 		1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A441F0C0E9900D2453D /* Room.swift */; };
 		1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A451F0C0E9900D2453D /* Session.swift */; };
-		1E4D5A511F0C0E9900D2453D /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A461F0C0E9900D2453D /* Speaker.swift */; };
+		1E4D5A511F0C0E9900D2453D /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A461F0C0E9900D2453D /* Participant.swift */; };
 		1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */; };
 		1E4D5A531F0C0E9900D2453D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A491F0C0E9900D2453D /* Request.swift */; };
 		1E4D5A561F0C179900D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
 		1E4D5A571F0C179900D2453D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */; };
 		1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */; };
+		1E76D4481F13AEF900C14923 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4471F13AEF900C14923 /* Conference.swift */; };
+		1E76D44A1F13B10F00C14923 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4491F13B10F00C14923 /* Track.swift */; };
+		1E7BD9821F13E16800DC0C56 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9811F13E16800DC0C56 /* Venue.swift */; };
 		1EF8B0AD1F127E0B009DDB70 /* Date+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8B0AC1F127E0B009DDB70 /* Date+components.swift */; };
 		44884BD91EFE3A1700E7682A /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		OBJ_27 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* OctavKitTests.swift */; };
@@ -47,11 +50,14 @@
 		1E4D5A431F0C0E9900D2453D /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
 		1E4D5A441F0C0E9900D2453D /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		1E4D5A451F0C0E9900D2453D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		1E4D5A461F0C0E9900D2453D /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		1E4D5A461F0C0E9900D2453D /* Participant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		1E4D5A491F0C0E9900D2453D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterHolder.swift; sourceTree = "<group>"; };
 		1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
+		1E76D4471F13AEF900C14923 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
+		1E76D4491F13B10F00C14923 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		1E7BD9811F13E16800DC0C56 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		1EF8B0AC1F127E0B009DDB70 /* Date+components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+components.swift"; sourceTree = "<group>"; };
 		44884BD81EFE3A1700E7682A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		OBJ_11 /* OctavKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKitTests.swift; sourceTree = "<group>"; };
@@ -105,11 +111,14 @@
 		1E4D5A411F0C0E9900D2453D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				1E76D4471F13AEF900C14923 /* Conference.swift */,
 				1E4D5A431F0C0E9900D2453D /* Id.swift */,
+				1E4D5A461F0C0E9900D2453D /* Participant.swift */,
 				1E4D5A441F0C0E9900D2453D /* Room.swift */,
 				1E4D5A451F0C0E9900D2453D /* Session.swift */,
-				1E4D5A461F0C0E9900D2453D /* Speaker.swift */,
 				1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */,
+				1E76D4491F13B10F00C14923 /* Track.swift */,
+				1E7BD9811F13E16800DC0C56 /* Venue.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -286,13 +295,16 @@
 				1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */,
 				1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */,
 				1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */,
+				1E76D4481F13AEF900C14923 /* Conference.swift in Sources */,
 				1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */,
 				1E4D5A531F0C0E9900D2453D /* Request.swift in Sources */,
 				1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */,
-				1E4D5A511F0C0E9900D2453D /* Speaker.swift in Sources */,
+				1E4D5A511F0C0E9900D2453D /* Participant.swift in Sources */,
 				1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */,
+				1E7BD9821F13E16800DC0C56 /* Venue.swift in Sources */,
 				1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */,
 				1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */,
+				1E76D44A1F13B10F00C14923 /* Track.swift in Sources */,
 				1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */,
 				1EF8B0AD1F127E0B009DDB70 /* Date+components.swift in Sources */,
 				1E2D8B8A1F1141130025613F /* Date+ISO8601.swift in Sources */,

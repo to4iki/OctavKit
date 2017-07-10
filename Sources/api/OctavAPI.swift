@@ -44,4 +44,20 @@ final class OctavAPI {
             }
         }
     }
+
+    struct Lookup: Request {
+        typealias Response = Conference
+
+        var path: String {
+            return "/conference/lookup"
+        }
+
+        var method: HTTPMethod {
+            return .get
+        }
+
+        var parameters: Any? {
+            return ["id": ParamtersHolder.conferenceId]
+        }
+    }
 }

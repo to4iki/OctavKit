@@ -71,6 +71,12 @@ extension Session: CustomStringConvertible {
     }
 }
 
+extension Session: Comparable {
+    public static func < (lhs: Session, rhs: Session) -> Bool {
+        return lhs.startsOn < rhs.startsOn
+    }
+}
+
 extension Session: Equatable {
     public static func == (lhs: Session, rhs: Session) -> Bool {
         return lhs.id == rhs.id &&
