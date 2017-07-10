@@ -3,8 +3,8 @@ import Himotoki
 
 public struct Session {
     public let id: Id<Session>
-    public let room: Room
-    public let speaker: Speaker
+    public let room: Conference.Track.Room
+    public let speaker: Conference.Speaker
     public let title: String
     public let abstract: String
     public let memo: String?

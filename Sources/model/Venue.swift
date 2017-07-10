@@ -1,19 +1,21 @@
 import Foundation
 import Himotoki
 
-public struct Venue {
-    public let id: Id<Venue>
-    public let name: String
-    public let address: String
-    public let placeId: String
-    public let url: URL
-    public let location: (latitude: Double, longitude: Double)
-    public let rooms: [Room]
+extension Conference {
+    public struct Venue {
+        public let id: Id<Venue>
+        public let name: String
+        public let address: String
+        public let placeId: String
+        public let url: URL
+        public let location: (latitude: Double, longitude: Double)
+        public let rooms: [Conference.Track.Room]
+    }
 }
 
-extension Venue: Decodable {
-    public static func decode(_ e: Extractor) throws -> Venue {
-        return try Venue(
+extension Conference.Venue: Decodable {
+    public static func decode(_ e: Extractor) throws -> Conference.Venue {
+        return try Conference.Venue(
             id: Id(value: e <| "id"),
             name: e <| "name",
             address: e <| "address",
@@ -25,20 +27,20 @@ extension Venue: Decodable {
     }
 }
 
-extension Venue: CustomStringConvertible {
+extension Conference.Venue: CustomStringConvertible {
     public var description: String {
         return "Venue(id: \(id), name: \(name), address: \(address), placeId: \(placeId), " +
         "url: \(url), location: \(location), rooms: \(rooms)"
     }
 }
 
-extension Venue: Equatable {
-    public static func == (lhs: Venue, rhs: Venue) -> Bool {
+extension Conference.Venue: Equatable {
+    public static func == (lhs: Conference.Venue, rhs: Conference.Venue) -> Bool {
         return lhs.id == rhs.id
     }
 }
 
-extension Venue: Hashable {
+extension Conference.Venue: Hashable {
     public var hashValue: Int {
         return id.hashValue
     }

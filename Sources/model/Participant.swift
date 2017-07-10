@@ -40,42 +40,44 @@ extension Participant {
     }
 }
 
-public struct Speaker: Participant {
-    public let id: Id<Speaker>
-    public let nickname: String
-    public let firstname: String?
-    public let lastname: String?
-    public let avatarURL: URL
-    public let lang: Locale
-    public let timezone: TimeZone?
+extension Conference {
+    public struct Speaker: Participant {
+        public let id: Id<Speaker>
+        public let nickname: String
+        public let firstname: String?
+        public let lastname: String?
+        public let avatarURL: URL
+        public let lang: Locale
+        public let timezone: TimeZone?
 
-    public init(id: Id<Speaker>, nickname: String, firstname: String?, lastname: String?, avatarURL: URL, lang: Locale, timezone: TimeZone?) {
-        self.id = id
-        self.nickname = nickname
-        self.firstname = firstname
-        self.lastname = lastname
-        self.avatarURL = avatarURL
-        self.lang = lang
-        self.timezone = timezone
+        public init(id: Id<Speaker>, nickname: String, firstname: String?, lastname: String?, avatarURL: URL, lang: Locale, timezone: TimeZone?) {
+            self.id = id
+            self.nickname = nickname
+            self.firstname = firstname
+            self.lastname = lastname
+            self.avatarURL = avatarURL
+            self.lang = lang
+            self.timezone = timezone
+        }
     }
-}
 
-public struct Staff: Participant {
-    public let id: Id<Staff>
-    public let nickname: String
-    public let firstname: String?
-    public let lastname: String?
-    public let avatarURL: URL
-    public let lang: Locale
-    public let timezone: TimeZone?
+    public struct Staff: Participant {
+        public let id: Id<Staff>
+        public let nickname: String
+        public let firstname: String?
+        public let lastname: String?
+        public let avatarURL: URL
+        public let lang: Locale
+        public let timezone: TimeZone?
 
-    public init(id: Id<Staff>, nickname: String, firstname: String?, lastname: String?, avatarURL: URL, lang: Locale, timezone: TimeZone?) {
-        self.id = id
-        self.nickname = nickname
-        self.firstname = firstname
-        self.lastname = lastname
-        self.avatarURL = avatarURL
-        self.lang = lang
-        self.timezone = timezone
+        public init(id: Id<Staff>, nickname: String, firstname: String?, lastname: String?, avatarURL: URL, lang: Locale, timezone: TimeZone?) {
+            self.id = id
+            self.nickname = nickname
+            self.firstname = firstname
+            self.lastname = lastname
+            self.avatarURL = avatarURL
+            self.lang = lang
+            self.timezone = timezone
+        }
     }
 }

@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1E2D8B8A1F1141130025613F /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D8B891F1141130025613F /* Date+ISO8601.swift */; };
+		1E360B4D1F13FABA00508135 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E360B4C1F13FABA00508135 /* Schedule.swift */; };
 		1E4D5A231F0C0E4600D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
 		1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */; };
 		1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */; };
 		1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A401F0C0E9900D2453D /* OctavKit.swift */; };
 		1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A431F0C0E9900D2453D /* Id.swift */; };
-		1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A441F0C0E9900D2453D /* Room.swift */; };
 		1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A451F0C0E9900D2453D /* Session.swift */; };
 		1E4D5A511F0C0E9900D2453D /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A461F0C0E9900D2453D /* Participant.swift */; };
 		1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */; };
@@ -43,12 +43,12 @@
 
 /* Begin PBXFileReference section */
 		1E2D8B891F1141130025613F /* Date+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
+		1E360B4C1F13FABA00508135 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		1E4D5A221F0C0E4600D2453D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPI.swift; sourceTree = "<group>"; };
 		1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPIError.swift; sourceTree = "<group>"; };
 		1E4D5A401F0C0E9900D2453D /* OctavKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavKit.swift; sourceTree = "<group>"; };
 		1E4D5A431F0C0E9900D2453D /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
-		1E4D5A441F0C0E9900D2453D /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		1E4D5A451F0C0E9900D2453D /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1E4D5A461F0C0E9900D2453D /* Participant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
 		1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				1E76D4471F13AEF900C14923 /* Conference.swift */,
 				1E4D5A431F0C0E9900D2453D /* Id.swift */,
 				1E4D5A461F0C0E9900D2453D /* Participant.swift */,
-				1E4D5A441F0C0E9900D2453D /* Room.swift */,
+				1E360B4C1F13FABA00508135 /* Schedule.swift */,
 				1E4D5A451F0C0E9900D2453D /* Session.swift */,
 				1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */,
 				1E76D4491F13B10F00C14923 /* Track.swift */,
@@ -294,13 +294,13 @@
 			files = (
 				1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */,
 				1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */,
+				1E360B4D1F13FABA00508135 /* Schedule.swift in Sources */,
 				1E4D5A501F0C0E9900D2453D /* Session.swift in Sources */,
 				1E76D4481F13AEF900C14923 /* Conference.swift in Sources */,
 				1E4D5A4A1F0C0E9900D2453D /* OctavAPI.swift in Sources */,
 				1E4D5A531F0C0E9900D2453D /* Request.swift in Sources */,
 				1E4D5A4C1F0C0E9900D2453D /* OctavKit.swift in Sources */,
 				1E4D5A511F0C0E9900D2453D /* Participant.swift in Sources */,
-				1E4D5A4F1F0C0E9900D2453D /* Room.swift in Sources */,
 				1E7BD9821F13E16800DC0C56 /* Venue.swift in Sources */,
 				1E4D5A521F0C0E9900D2453D /* HTTPMethod.swift in Sources */,
 				1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */,
