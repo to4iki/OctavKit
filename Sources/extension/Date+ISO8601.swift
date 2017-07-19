@@ -13,4 +13,8 @@ extension Date {
         guard let date = Date.ISO8601Formatter.date(from: string) else { return nil }
         self = date
     }
+
+    var ISO8601String: String {
+        return Date.ISO8601Formatter.string(from: self)
+    }
 }

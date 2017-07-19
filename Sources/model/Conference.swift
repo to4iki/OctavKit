@@ -9,6 +9,19 @@ public struct Conference {
     public let tracks: [Track]
 }
 
+extension Conference: Encodable {
+    public func encodeJSON() -> [String : Any] {
+        return [
+            "id": id.value,
+            "dates": schedules.map({ $0.encodeJSON() }),
+            "administrators": staffs.map({ $0.encodeJSON() }),
+            "venues": venues.map({ $0.encodeJSON() }),
+            "sponsors": sponsors.map({ $0.encodeJSON() }),
+            "tracks": tracks.map({ $0.encodeJSON() })
+        ]
+    }
+}
+
 extension Conference: Decodable {
     public static func decode(_ e: Extractor) throws -> Conference {
         return try Conference(

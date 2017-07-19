@@ -9,6 +9,18 @@ public struct Sponsor {
     public let groupName: String
 }
 
+extension Sponsor: Encodable {
+    public func encodeJSON() -> [String : Any] {
+        return [
+            "id": id.value,
+            "name": name,
+            "logo_url": logoURL.absoluteString,
+            "url": linkURL.absoluteString,
+            "group_name": groupName
+        ]
+    }
+}
+
 extension Sponsor: Decodable {
     public static func decode(_ e: Extractor) throws -> Sponsor {
         return try Sponsor(

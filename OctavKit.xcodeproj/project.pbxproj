@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E22F4721F1FCF67007DC182 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22F4711F1FCF67007DC182 /* Encodable.swift */; };
 		1E2D8B8A1F1141130025613F /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D8B891F1141130025613F /* Date+ISO8601.swift */; };
 		1E360B4D1F13FABA00508135 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E360B4C1F13FABA00508135 /* Schedule.swift */; };
 		1E4D5A231F0C0E4600D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E22F4711F1FCF67007DC182 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
 		1E2D8B891F1141130025613F /* Date+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
 		1E360B4C1F13FABA00508135 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		1E4D5A221F0C0E4600D2453D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1E76D4471F13AEF900C14923 /* Conference.swift */,
+				1E22F4711F1FCF67007DC182 /* Encodable.swift */,
 				1E4D5A431F0C0E9900D2453D /* Id.swift */,
 				1E4D5A461F0C0E9900D2453D /* Participant.swift */,
 				1E360B4C1F13FABA00508135 /* Schedule.swift */,
@@ -306,6 +309,7 @@
 				1E4D5A4B1F0C0E9900D2453D /* OctavAPIError.swift in Sources */,
 				1E76D44A1F13B10F00C14923 /* Track.swift in Sources */,
 				1E4D5A4E1F0C0E9900D2453D /* Id.swift in Sources */,
+				1E22F4721F1FCF67007DC182 /* Encodable.swift in Sources */,
 				1EF8B0AD1F127E0B009DDB70 /* Date+components.swift in Sources */,
 				1E2D8B8A1F1141130025613F /* Date+ISO8601.swift in Sources */,
 			);

@@ -13,6 +13,21 @@ extension Conference {
     }
 }
 
+extension Conference.Venue: Encodable {
+    public func encodeJSON() -> [String: Any] {
+        return [
+            "id": id.value,
+            "name": name,
+            "address": address,
+            "place_id": placeId,
+            "url": url.absoluteString,
+            "latitude": location.latitude,
+            "longitude": location.longitude,
+            "rooms": rooms.map({ $0.encodeJSON() })
+        ]
+    }
+}
+
 extension Conference.Venue: Decodable {
     public static func decode(_ e: Extractor) throws -> Conference.Venue {
         return try Conference.Venue(

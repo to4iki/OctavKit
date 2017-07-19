@@ -12,6 +12,16 @@ extension Conference {
     }
 }
 
+extension Conference.Schedule: Encodable {
+    public func encodeJSON() -> [String : Any] {
+        return [
+            "id": id.value,
+            "open": open.ISO8601String,
+            "close": close.ISO8601String
+        ]
+    }
+}
+
 extension Conference.Schedule: Decodable {
     public static func decode(_ e: Extractor) throws -> Conference.Schedule {
         return try Conference.Schedule(

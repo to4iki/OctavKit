@@ -30,6 +30,27 @@ extension Session {
     }
 }
 
+extension Session: Encodable {
+    public func encodeJSON() -> [String : Any] {
+        return [
+            "id": id.value,
+            "room": room.encodeJSON(),
+            "speaker": speaker.encodeJSON(),
+            "title": title,
+            "abstract": abstract,
+            "memo": memo ?? "",
+            "starts_on": startsOn.ISO8601String,
+            "duration": duration,
+            "material_level": materialLevel.rawValue,
+            "spoken_language": sporkenLanguage.identifier,
+            "slide_language": slideLanguage.identifier,
+            "photo_release": photoRelease ? "allow" : "deny",
+            "recording_release": recordingRelease ? "allow" : "deny",
+            "materials_release": materialsRelease ? "allow" : "deny"
+        ]
+    }
+}
+
 extension Session: Decodable {
     public static func decode(_ e: Extractor) throws -> Session {
         func isRelease(rawValue: String) -> Bool {
