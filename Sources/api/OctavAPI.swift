@@ -57,7 +57,11 @@ final class OctavAPI {
         }
 
         var parameters: Any? {
-            return ["id": ParamtersHolder.conferenceId]
+            var dic = ["id": ParamtersHolder.conferenceId]
+            if let langCode = ParamtersHolder.langCode {
+                dic["lang"] = langCode
+            }
+            return dic
         }
     }
 }
