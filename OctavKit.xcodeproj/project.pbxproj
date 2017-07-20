@@ -22,6 +22,29 @@
 		1E4D5A561F0C179900D2453D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
 		1E4D5A571F0C179900D2453D /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		1E4D5A5A1F0C1B7900D2453D /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */; };
+		1E56B34E1F211790004D52D8 /* OctavKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E56B3451F211790004D52D8 /* OctavKit.framework */; };
+		1E56B35C1F2118FF004D52D8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
+		1E56B35D1F2118FF004D52D8 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
+		1E56B35F1F211A30004D52D8 /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3D1F0C0E9900D2453D /* OctavAPI.swift */; };
+		1E56B3601F211A34004D52D8 /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A3E1F0C0E9900D2453D /* OctavAPIError.swift */; };
+		1E56B3611F211A39004D52D8 /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */; };
+		1E56B3621F211A3E004D52D8 /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2D8B891F1141130025613F /* Date+ISO8601.swift */; };
+		1E56B3631F211A42004D52D8 /* Date+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF8B0AC1F127E0B009DDB70 /* Date+components.swift */; };
+		1E56B3641F211A47004D52D8 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4471F13AEF900C14923 /* Conference.swift */; };
+		1E56B3651F211A4B004D52D8 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22F4711F1FCF67007DC182 /* Encodable.swift */; };
+		1E56B3661F211A4F004D52D8 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A431F0C0E9900D2453D /* Id.swift */; };
+		1E56B3671F211A53004D52D8 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A461F0C0E9900D2453D /* Participant.swift */; };
+		1E56B3681F211A57004D52D8 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E360B4C1F13FABA00508135 /* Schedule.swift */; };
+		1E56B3691F211A5B004D52D8 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A451F0C0E9900D2453D /* Session.swift */; };
+		1E56B36A1F211A5E004D52D8 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */; };
+		1E56B36B1F211A62004D52D8 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4491F13B10F00C14923 /* Track.swift */; };
+		1E56B36C1F211A65004D52D8 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9811F13E16800DC0C56 /* Venue.swift */; };
+		1E56B36D1F211A6C004D52D8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */; };
+		1E56B36E1F211A70004D52D8 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A491F0C0E9900D2453D /* Request.swift */; };
+		1E56B36F1F211A74004D52D8 /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D5A401F0C0E9900D2453D /* OctavKit.swift */; };
+		1E56B3701F211A7B004D52D8 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* OctavKitTests.swift */; };
+		1E56B3711F211AAE004D52D8 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4D5A221F0C0E4600D2453D /* Result.framework */; };
+		1E56B3721F211AAE004D52D8 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44884BD81EFE3A1700E7682A /* Himotoki.framework */; };
 		1E5C14DF1F120C1E00AEB4F7 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */; };
 		1E76D4481F13AEF900C14923 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4471F13AEF900C14923 /* Conference.swift */; };
 		1E76D44A1F13B10F00C14923 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76D4491F13B10F00C14923 /* Track.swift */; };
@@ -40,6 +63,13 @@
 			remoteGlobalIDString = OBJ_15;
 			remoteInfo = OctavKit;
 		};
+		1E56B34F1F211790004D52D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E56B3441F211790004D52D8;
+			remoteInfo = "OctavKit-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +86,10 @@
 		1E4D5A481F0C0E9900D2453D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		1E4D5A491F0C0E9900D2453D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		1E4D5A591F0C1B7900D2453D /* ParameterHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterHolder.swift; sourceTree = "<group>"; };
+		1E56B33F1F211530004D52D8 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
+		1E56B3451F211790004D52D8 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E56B34D1F211790004D52D8 /* OctavKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OctavKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E56B3751F211B8B004D52D8 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = info.plist; sourceTree = "<group>"; };
 		1E5C14DE1F120C1E00AEB4F7 /* Sponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
 		1E76D4471F13AEF900C14923 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
 		1E76D4491F13B10F00C14923 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
@@ -64,11 +98,30 @@
 		44884BD81EFE3A1700E7682A /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		OBJ_11 /* OctavKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKitTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_14 /* OctavKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = OctavKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_14 /* OctavKit.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = OctavKit.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E56B3411F211790004D52D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E56B35C1F2118FF004D52D8 /* Result.framework in Frameworks */,
+				1E56B35D1F2118FF004D52D8 /* Himotoki.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E56B34A1F211790004D52D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E56B3711F211AAE004D52D8 /* Result.framework in Frameworks */,
+				1E56B3721F211AAE004D52D8 /* Himotoki.framework in Frameworks */,
+				1E56B34E1F211790004D52D8 /* OctavKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -135,6 +188,22 @@
 			path = request;
 			sourceTree = "<group>";
 		};
+		1E56B33E1F211520004D52D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E56B33F1F211530004D52D8 /* info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1E56B3741F211B6F004D52D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E56B3751F211B8B004D52D8 /* info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		44884BD71EFE3A1700E7682A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* OctavKit.framework */,
-				OBJ_14 /* OctavKitTests.xctest */,
+				OBJ_14 /* OctavKit.xctest */,
+				1E56B3451F211790004D52D8 /* OctavKit.framework */,
+				1E56B34D1F211790004D52D8 /* OctavKit-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -175,6 +246,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				1E56B33E1F211520004D52D8 /* Supporting Files */,
 				1E4D5A3C1F0C0E9900D2453D /* api */,
 				1E2D8B881F1141010025613F /* extension */,
 				1E4D5A411F0C0E9900D2453D /* model */,
@@ -188,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* OctavKitTests */,
+				1E56B3741F211B6F004D52D8 /* Supporting Files */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -195,9 +268,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		OBJ_15 /* OctavKit */ = {
+		1E56B3441F211790004D52D8 /* OctavKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_16 /* Build configuration list for PBXNativeTarget "OctavKit" */;
+			buildConfigurationList = 1E56B3561F211790004D52D8 /* Build configuration list for PBXNativeTarget "OctavKit-iOS" */;
+			buildPhases = (
+				1E56B3401F211790004D52D8 /* Sources */,
+				1E56B3411F211790004D52D8 /* Frameworks */,
+				1E56B35E1F211926004D52D8 /* Carthage Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OctavKit-iOS";
+			productName = "OctavKit-iOS";
+			productReference = 1E56B3451F211790004D52D8 /* OctavKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1E56B34C1F211790004D52D8 /* OctavKit-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E56B3591F211790004D52D8 /* Build configuration list for PBXNativeTarget "OctavKit-iOSTests" */;
+			buildPhases = (
+				1E56B3491F211790004D52D8 /* Sources */,
+				1E56B34A1F211790004D52D8 /* Frameworks */,
+				1E56B3731F211AC4004D52D8 /* Carthage Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E56B3501F211790004D52D8 /* PBXTargetDependency */,
+			);
+			name = "OctavKit-iOSTests";
+			productName = "OctavKit-iOSTests";
+			productReference = 1E56B34D1F211790004D52D8 /* OctavKit-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		OBJ_15 /* OctavKit-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_16 /* Build configuration list for PBXNativeTarget "OctavKit-Mac" */;
 			buildPhases = (
 				OBJ_19 /* Sources */,
 				OBJ_21 /* Frameworks */,
@@ -207,27 +315,27 @@
 			);
 			dependencies = (
 			);
-			name = OctavKit;
+			name = "OctavKit-Mac";
 			productName = OctavKit;
 			productReference = OBJ_13 /* OctavKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		OBJ_22 /* OctavKitTests */ = {
+		OBJ_22 /* OctavKit-MacTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "OctavKitTests" */;
+			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "OctavKit-MacTests" */;
 			buildPhases = (
 				OBJ_26 /* Sources */,
 				OBJ_28 /* Frameworks */,
-				1E4D5A581F0C17AB00D2453D /* ShellScript */,
+				1E4D5A581F0C17AB00D2453D /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				OBJ_30 /* PBXTargetDependency */,
 			);
-			name = OctavKitTests;
+			name = "OctavKit-MacTests";
 			productName = OctavKitTests;
-			productReference = OBJ_14 /* OctavKitTests.xctest */;
+			productReference = OBJ_14 /* OctavKit.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +344,18 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					1E56B3441F211790004D52D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+					1E56B34C1F211790004D52D8 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "OctavKit" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -250,14 +369,16 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				OBJ_15 /* OctavKit */,
-				OBJ_22 /* OctavKitTests */,
+				OBJ_15 /* OctavKit-Mac */,
+				OBJ_22 /* OctavKit-MacTests */,
+				1E56B3441F211790004D52D8 /* OctavKit-iOS */,
+				1E56B34C1F211790004D52D8 /* OctavKit-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E4D5A581F0C17AB00D2453D /* ShellScript */ = {
+		1E4D5A581F0C17AB00D2453D /* Carthage Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,6 +387,39 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		1E56B35E1F211926004D52D8 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		1E56B3731F211AC4004D52D8 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Himotoki.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Carthage Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +445,38 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E56B3401F211790004D52D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E56B36A1F211A5E004D52D8 /* Sponsor.swift in Sources */,
+				1E56B36E1F211A70004D52D8 /* Request.swift in Sources */,
+				1E56B3661F211A4F004D52D8 /* Id.swift in Sources */,
+				1E56B3621F211A3E004D52D8 /* Date+ISO8601.swift in Sources */,
+				1E56B36C1F211A65004D52D8 /* Venue.swift in Sources */,
+				1E56B3671F211A53004D52D8 /* Participant.swift in Sources */,
+				1E56B3651F211A4B004D52D8 /* Encodable.swift in Sources */,
+				1E56B35F1F211A30004D52D8 /* OctavAPI.swift in Sources */,
+				1E56B3631F211A42004D52D8 /* Date+components.swift in Sources */,
+				1E56B36D1F211A6C004D52D8 /* HTTPMethod.swift in Sources */,
+				1E56B3641F211A47004D52D8 /* Conference.swift in Sources */,
+				1E56B3691F211A5B004D52D8 /* Session.swift in Sources */,
+				1E56B36F1F211A74004D52D8 /* OctavKit.swift in Sources */,
+				1E56B3601F211A34004D52D8 /* OctavAPIError.swift in Sources */,
+				1E56B36B1F211A62004D52D8 /* Track.swift in Sources */,
+				1E56B3681F211A57004D52D8 /* Schedule.swift in Sources */,
+				1E56B3611F211A39004D52D8 /* ParameterHolder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E56B3491F211790004D52D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E56B3701F211A7B004D52D8 /* OctavKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_19 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -326,14 +512,255 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1E56B3501F211790004D52D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E56B3441F211790004D52D8 /* OctavKit-iOS */;
+			targetProxy = 1E56B34F1F211790004D52D8 /* PBXContainerItemProxy */;
+		};
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = OBJ_15 /* OctavKit */;
+			target = OBJ_15 /* OctavKit-Mac */;
 			targetProxy = 1E3D375E1EE9C6D6004ABACA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1E56B3571F211790004D52D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKit;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E56B3581F211790004D52D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKit;
+				PRODUCT_NAME = "$(PROJECT_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1E56B35A1F211790004D52D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Supporting Files/info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.to4iki.OctavKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1E56B35B1F211790004D52D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Supporting Files/info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.to4iki.OctavKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		OBJ_17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,13 +771,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKit_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = OctavKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				TARGET_NAME = OctavKit;
 			};
@@ -366,13 +793,13 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKit_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = OctavKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKit;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
 				TARGET_NAME = OctavKit;
 			};
@@ -389,10 +816,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKitTests_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Supporting Files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				TARGET_NAME = OctavKitTests;
 			};
 			name = Debug;
@@ -408,10 +836,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = OctavKit.xcodeproj/OctavKitTests_Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/Supporting Files/info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				TARGET_NAME = OctavKitTests;
 			};
 			name = Release;
@@ -426,7 +855,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,7 +878,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -463,7 +894,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_16 /* Build configuration list for PBXNativeTarget "OctavKit" */ = {
+		1E56B3561F211790004D52D8 /* Build configuration list for PBXNativeTarget "OctavKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E56B3571F211790004D52D8 /* Debug */,
+				1E56B3581F211790004D52D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E56B3591F211790004D52D8 /* Build configuration list for PBXNativeTarget "OctavKit-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E56B35A1F211790004D52D8 /* Debug */,
+				1E56B35B1F211790004D52D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_16 /* Build configuration list for PBXNativeTarget "OctavKit-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_17 /* Debug */,
@@ -481,7 +930,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_23 /* Build configuration list for PBXNativeTarget "OctavKitTests" */ = {
+		OBJ_23 /* Build configuration list for PBXNativeTarget "OctavKit-MacTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_24 /* Debug */,

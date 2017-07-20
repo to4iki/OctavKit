@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "9999"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_15"
+               BlueprintIdentifier = "1E56B3441F211790004D52D8"
                BuildableName = "OctavKit.framework"
-               BlueprintName = "OctavKit"
+               BlueprintName = "OctavKit-iOS"
                ReferencedContainer = "container:OctavKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,13 +32,22 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_22"
-               BuildableName = "OctavKitTests.xctest"
-               BlueprintName = "OctavKitTests"
+               BlueprintIdentifier = "1E56B34C1F211790004D52D8"
+               BuildableName = "OctavKit-iOSTests.xctest"
+               BlueprintName = "OctavKit-iOSTests"
                ReferencedContainer = "container:OctavKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E56B3441F211790004D52D8"
+            BuildableName = "OctavKit.framework"
+            BlueprintName = "OctavKit-iOS"
+            ReferencedContainer = "container:OctavKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -55,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_15"
+            BlueprintIdentifier = "1E56B3441F211790004D52D8"
             BuildableName = "OctavKit.framework"
-            BlueprintName = "OctavKit"
+            BlueprintName = "OctavKit-iOS"
             ReferencedContainer = "container:OctavKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -70,6 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E56B3441F211790004D52D8"
+            BuildableName = "OctavKit.framework"
+            BlueprintName = "OctavKit-iOS"
+            ReferencedContainer = "container:OctavKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
