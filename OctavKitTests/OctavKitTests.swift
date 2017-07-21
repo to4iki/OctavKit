@@ -3,7 +3,7 @@ import XCTest
 
 final class OctavKitTests: XCTestCase {
     override func setUp() {
-        OctavKit.setup(conferenceId: "xxxx")
+        OctavKit.setup(conferenceId: "")
         OctavKit.setLocale(Locale(identifier: "ja-JP"))
     }
 
