@@ -4,13 +4,13 @@
 Swift toolkit for the Octav API.
 
 ## Requirements
-- Swift 3.0
-- iOS 8.0 or later
+- Swift 3.0 or later
+- iOS 9.0 or later
 
 ## Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
 - Insert `github "to4iki/OctavKit"` to your Cartfile.
-- Run `carthage update`.
+- Run `carthage bootstrap --platform iOS`.
 - Link your app with `OctavKit.framework` and `Himotoki.framework` and `Result.framework` in `Carthage/Build`.
 
 ## Usage
