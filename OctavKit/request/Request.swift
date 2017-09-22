@@ -1,5 +1,4 @@
 import Foundation
-import Himotoki
 
 protocol Request {
     associatedtype Response
@@ -44,9 +43,8 @@ extension Request {
 
 extension Request where Response: Decodable {
     func response(from data: Data, urlResponse: URLResponse) throws -> Response {
-        let json = try JSONSerialization.jsonObject(with: data, options: [])
         if case (200..<300)? = (urlResponse as? HTTPURLResponse)?.statusCode {
-            return try Response.decodeValue(json)
+            return try JSONDecoder().decode(Response.self, from: data)
         } else {
             // TODO: decode error object
             throw OctavAPIError.apiError(NSError())

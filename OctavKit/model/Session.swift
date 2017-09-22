@@ -1,8 +1,25 @@
 import Foundation
-import Himotoki
 
-public struct Session {
-    public let id: Id<Session>
+public struct Session: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case room
+        case speaker
+        case title
+        case abstract
+        case memo
+        case startsOn = "starts_on"
+        case duration
+        case materialLevel = "material_level"
+    }
+    
+    public enum Level: String, Codable {
+        case beginner
+        case intermediate
+        case advanced
+    }
+
+    public let id: String
     public let room: Conference.Track.Room
     public let speaker: Conference.Speaker
     public let title: String
@@ -11,51 +28,12 @@ public struct Session {
     public let startsOn: Date
     public let duration: Int
     public let materialLevel: Level
-    public let sporkenLanguage: Locale
-    public let slideLanguage: Locale
-    public let photoRelease: Bool
-    public let recordingRelease: Bool
-    public let materialsRelease: Bool
 
     public var endsOn: Date {
         return startsOn.add(second: duration)
     }
-}
-
-extension Session {
-    public enum Level: String {
-        case beginner
-        case intermediate
-        case advanced
-    }
-}
-
-extension Session: Encodable {
-    public func encodeJSON() -> [String : Any] {
-        return [
-            "id": id.value,
-            "room": room.encodeJSON(),
-            "speaker": speaker.encodeJSON(),
-            "title": title,
-            "abstract": abstract,
-            "memo": memo ?? "",
-            "starts_on": startsOn.ISO8601String,
-            "duration": duration,
-            "material_level": materialLevel.rawValue,
-            "spoken_language": sporkenLanguage.identifier,
-            "slide_language": slideLanguage.identifier,
-            "photo_release": photoRelease ? "allow" : "deny",
-            "recording_release": recordingRelease ? "allow" : "deny",
-            "materials_release": materialsRelease ? "allow" : "deny"
-        ]
-    }
-}
-
-extension Session: Decodable {
-    public static func decode(_ e: Extractor) throws -> Session {
-        func isRelease(rawValue: String) -> Bool {
-            return rawValue == "allow" ? true : false
-        }
+    
+    public init(from decoder: Decoder) throws {
         func strictString(_ value: String) -> String? {
             if value.isEmpty {
                 return nil
@@ -63,23 +41,17 @@ extension Session: Decodable {
                 return value
             }
         }
-
-        return try Session(
-            id: Id(value: e <| "id"),
-            room: e <| "room",
-            speaker: e <| "speaker",
-            title: e <| "title",
-            abstract: e <| "abstract",
-            memo: strictString(e <| "memo"),
-            startsOn: Date(fromISO8601: e <| "starts_on")!,
-            duration: e <| "duration",
-            materialLevel: Session.Level(rawValue: e <| "material_level")!,
-            sporkenLanguage: Locale(identifier: e <| "spoken_language"),
-            slideLanguage: Locale(identifier: e <| "slide_language"),
-            photoRelease: isRelease(rawValue: e <| "photo_release"),
-            recordingRelease: isRelease(rawValue: e <| "recording_release"),
-            materialsRelease: isRelease(rawValue: e <| "materials_release")
-        )
+        
+        let container = try decoder.container(keyedBy: Session.CodingKeys.self)
+        self.id = try container.decode(String.self, forKey: .id)
+        self.room = try container.decode(Conference.Track.Room.self, forKey: .room)
+        self.speaker = try container.decode(Conference.Speaker.self, forKey: .speaker)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.abstract = try container.decode(String.self, forKey: .abstract)
+        self.memo = strictString(try container.decode(String.self, forKey: .memo))
+        self.startsOn = Date(fromISO8601: try container.decode(String.self, forKey: .startsOn))!
+        self.duration = try container.decode(Int.self, forKey: .duration)
+        self.materialLevel = try container.decode(Level.self, forKey: .materialLevel)
     }
 }
 
@@ -87,8 +59,7 @@ extension Session: CustomStringConvertible {
     public var description: String {
         return "Session(id: \(id), room: \(room), speaker: \(speaker), title: \(title), " +
         "abstract: \(abstract), memo: \(memo.debugDescription), startsOn: \(startsOn), duration: \(duration), " +
-        "materialLevel: \(materialLevel.rawValue), sporkenLanguage: \(sporkenLanguage), slideLanguage: \(slideLanguage), " +
-        "photoRelease: \(photoRelease), recordingRelease: \(recordingRelease), materialsRelease: \(materialsRelease))"
+        "materialLevel: \(materialLevel.rawValue))"
     }
 }
 
@@ -100,20 +71,7 @@ extension Session: Comparable {
 
 extension Session: Equatable {
     public static func == (lhs: Session, rhs: Session) -> Bool {
-        return lhs.id == rhs.id &&
-            lhs.room == rhs.room &&
-            lhs.speaker == rhs.speaker &&
-            lhs.title == rhs.title &&
-            lhs.abstract == rhs.abstract &&
-            lhs.memo == rhs.memo &&
-            lhs.startsOn == rhs.startsOn &&
-            lhs.duration == rhs.duration &&
-            lhs.materialLevel.rawValue == rhs.materialLevel.rawValue &&
-            lhs.sporkenLanguage == rhs.sporkenLanguage &&
-            lhs.slideLanguage == rhs.slideLanguage &&
-            lhs.photoRelease == rhs.photoRelease &&
-            lhs.recordingRelease == rhs.recordingRelease &&
-            lhs.materialsRelease == rhs.materialsRelease
+        return lhs.id == rhs.id
     }
 }
 

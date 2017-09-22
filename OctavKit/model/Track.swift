@@ -1,30 +1,14 @@
-import Himotoki
-
 extension Conference {
-    public struct Track {
-        public let id: Id<Track>
-        public let roomId: Id<Room>
+    public struct Track: Codable {
+        private enum CodingKeys: String, CodingKey {
+            case id
+            case roomId = "room_id"
+            case name
+        }
+        
+        public let id: String
+        public let roomId: String
         public let name: String
-    }
-}
-
-extension Conference.Track: Encodable {
-    public func encodeJSON() -> [String : Any] {
-        return [
-            "id": id.value,
-            "room_id": roomId.value,
-            "name": name
-        ]
-    }
-}
-
-extension Conference.Track: Decodable {
-    public static func decode(_ e: Extractor) throws -> Conference.Track {
-        return try Conference.Track(
-            id: Id(value: e <| "id"),
-            roomId: Id(value: e <| "room_id"),
-            name: e <| "name"
-        )
     }
 }
 
@@ -47,33 +31,18 @@ extension Conference.Track: Hashable {
 }
 
 extension Conference.Track {
-    public struct Room {
-        public let id: Id<Room>
-        public let venueId: Id<Conference.Venue>
+    public struct Room: Codable {
+        private enum CodingKeys: String, CodingKey {
+            case id
+            case venueId = "venue_id"
+            case name
+            case capacity
+        }
+        
+        public let id: String
+        public let venueId: String
         public let name: String
         public let capacity: Int
-    }
-}
-
-extension Conference.Track.Room: Encodable {
-    public func encodeJSON() -> [String : Any] {
-        return [
-            "id": id.value,
-            "venue_id": venueId.value,
-            "name": name,
-            "capacity": capacity
-        ]
-    }
-}
-
-extension Conference.Track.Room: Decodable {
-    public static func decode(_ e: Extractor) throws -> Conference.Track.Room {
-        return try Conference.Track.Room(
-            id: Id(value: e <| "id"),
-            venueId: Id(value: e <| "venue_id"),
-            name: e <| "name",
-            capacity: e <| "capacity"
-        )
     }
 }
 

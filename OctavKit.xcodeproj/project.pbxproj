@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5CE3921F7782C80088F648 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5CE3911F7782C80088F648 /* Staff.swift */; };
 		1E7EC5F71F21D99F00E43AD2 /* OctavKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7EC5ED1F21D99F00E43AD2 /* OctavKit.framework */; };
 		1E7EC5FC1F21D99F00E43AD2 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EC5FB1F21D99F00E43AD2 /* OctavKitTests.swift */; };
 		1E7EC5FE1F21D99F00E43AD2 /* OctavKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7EC5F01F21D99F00E43AD2 /* OctavKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E8C89701F21DBBA00D2BB10 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896E1F21DBBA00D2BB10 /* Result.framework */; };
-		1E8C89711F21DBBA00D2BB10 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */; };
 		1E8C89871F21DC7D00D2BB10 /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89731F21DC7D00D2BB10 /* OctavAPI.swift */; };
 		1E8C89881F21DC7D00D2BB10 /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89741F21DC7D00D2BB10 /* OctavAPIError.swift */; };
 		1E8C89891F21DC7D00D2BB10 /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89751F21DC7D00D2BB10 /* ParameterHolder.swift */; };
 		1E8C898A1F21DC7D00D2BB10 /* Date+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89771F21DC7D00D2BB10 /* Date+components.swift */; };
 		1E8C898B1F21DC7D00D2BB10 /* Date+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89781F21DC7D00D2BB10 /* Date+ISO8601.swift */; };
 		1E8C898C1F21DC7D00D2BB10 /* Conference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897A1F21DC7D00D2BB10 /* Conference.swift */; };
-		1E8C898D1F21DC7D00D2BB10 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897B1F21DC7D00D2BB10 /* Encodable.swift */; };
-		1E8C898E1F21DC7D00D2BB10 /* Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897C1F21DC7D00D2BB10 /* Id.swift */; };
-		1E8C898F1F21DC7D00D2BB10 /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897D1F21DC7D00D2BB10 /* Participant.swift */; };
+		1E8C898F1F21DC7D00D2BB10 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897D1F21DC7D00D2BB10 /* Speaker.swift */; };
 		1E8C89901F21DC7D00D2BB10 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897E1F21DC7D00D2BB10 /* Schedule.swift */; };
 		1E8C89911F21DC7D00D2BB10 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C897F1F21DC7D00D2BB10 /* Session.swift */; };
 		1E8C89921F21DC7D00D2BB10 /* Sponsor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89801F21DC7D00D2BB10 /* Sponsor.swift */; };
@@ -61,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E5CE3911F7782C80088F648 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		1E7EC5ED1F21D99F00E43AD2 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7EC5F01F21D99F00E43AD2 /* OctavKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctavKit.h; sourceTree = "<group>"; };
 		1E7EC5F11F21D99F00E43AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -75,9 +74,7 @@
 		1E8C89771F21DC7D00D2BB10 /* Date+components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+components.swift"; sourceTree = "<group>"; };
 		1E8C89781F21DC7D00D2BB10 /* Date+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+ISO8601.swift"; sourceTree = "<group>"; };
 		1E8C897A1F21DC7D00D2BB10 /* Conference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conference.swift; sourceTree = "<group>"; };
-		1E8C897B1F21DC7D00D2BB10 /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		1E8C897C1F21DC7D00D2BB10 /* Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Id.swift; sourceTree = "<group>"; };
-		1E8C897D1F21DC7D00D2BB10 /* Participant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
+		1E8C897D1F21DC7D00D2BB10 /* Speaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
 		1E8C897E1F21DC7D00D2BB10 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 		1E8C897F1F21DC7D00D2BB10 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		1E8C89801F21DC7D00D2BB10 /* Sponsor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sponsor.swift; sourceTree = "<group>"; };
@@ -94,7 +91,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8C89701F21DBBA00D2BB10 /* Result.framework in Frameworks */,
-				1E8C89711F21DBBA00D2BB10 /* Himotoki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,12 +181,11 @@
 			isa = PBXGroup;
 			children = (
 				1E8C897A1F21DC7D00D2BB10 /* Conference.swift */,
-				1E8C897B1F21DC7D00D2BB10 /* Encodable.swift */,
-				1E8C897C1F21DC7D00D2BB10 /* Id.swift */,
-				1E8C897D1F21DC7D00D2BB10 /* Participant.swift */,
 				1E8C897E1F21DC7D00D2BB10 /* Schedule.swift */,
 				1E8C897F1F21DC7D00D2BB10 /* Session.swift */,
+				1E8C897D1F21DC7D00D2BB10 /* Speaker.swift */,
 				1E8C89801F21DC7D00D2BB10 /* Sponsor.swift */,
+				1E5CE3911F7782C80088F648 /* Staff.swift */,
 				1E8C89811F21DC7D00D2BB10 /* Track.swift */,
 				1E8C89821F21DC7D00D2BB10 /* Venue.swift */,
 			);
@@ -264,16 +259,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = to4iki;
 				TargetAttributes = {
 					1E7EC5EC1F21D99F00E43AD2 = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 					1E7EC5F51F21D99F00E43AD2 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -319,17 +315,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8C89921F21DC7D00D2BB10 /* Sponsor.swift in Sources */,
-				1E8C898E1F21DC7D00D2BB10 /* Id.swift in Sources */,
 				1E8C89871F21DC7D00D2BB10 /* OctavAPI.swift in Sources */,
 				1E8C89941F21DC7D00D2BB10 /* Venue.swift in Sources */,
 				1E8C89951F21DC7D00D2BB10 /* OctavKit.swift in Sources */,
-				1E8C898F1F21DC7D00D2BB10 /* Participant.swift in Sources */,
-				1E8C898D1F21DC7D00D2BB10 /* Encodable.swift in Sources */,
+				1E8C898F1F21DC7D00D2BB10 /* Speaker.swift in Sources */,
 				1E8C89971F21DC7D00D2BB10 /* Request.swift in Sources */,
 				1E8C89881F21DC7D00D2BB10 /* OctavAPIError.swift in Sources */,
 				1E8C89891F21DC7D00D2BB10 /* ParameterHolder.swift in Sources */,
 				1E8C898C1F21DC7D00D2BB10 /* Conference.swift in Sources */,
 				1E8C89911F21DC7D00D2BB10 /* Session.swift in Sources */,
+				1E5CE3921F7782C80088F648 /* Staff.swift in Sources */,
 				1E8C898B1F21DC7D00D2BB10 /* Date+ISO8601.swift in Sources */,
 				1E8C89961F21DC7D00D2BB10 /* HTTPMethod.swift in Sources */,
 				1E8C89931F21DC7D00D2BB10 /* Track.swift in Sources */,
@@ -367,7 +362,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -375,7 +372,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -421,7 +422,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -429,7 +432,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -482,7 +489,8 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -509,7 +517,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -527,7 +536,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -545,7 +555,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

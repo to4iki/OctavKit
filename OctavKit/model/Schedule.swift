@@ -1,34 +1,19 @@
-import Himotoki
-
 extension Conference {
-    public struct Schedule {
-        public let id: Id<Schedule>
+    public struct Schedule: Codable {
+        public let id: String
         public let open: Date
         public let close: Date
 
+        public init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: Conference.Schedule.CodingKeys.self)
+            self.id = try container.decode(String.self, forKey: .id)
+            self.open = Date(fromISO8601: try container.decode(String.self, forKey: .open))!
+            self.close = Date(fromISO8601: try container.decode(String.self, forKey: .close))!
+        }
+        
         public var duration: TimeInterval {
             return close.timeIntervalSince(open)
         }
-    }
-}
-
-extension Conference.Schedule: Encodable {
-    public func encodeJSON() -> [String : Any] {
-        return [
-            "id": id.value,
-            "open": open.ISO8601String,
-            "close": close.ISO8601String
-        ]
-    }
-}
-
-extension Conference.Schedule: Decodable {
-    public static func decode(_ e: Extractor) throws -> Conference.Schedule {
-        return try Conference.Schedule(
-            id: Id(value: e <| "id"),
-            open: Date(fromISO8601: e <| "open")!,
-            close: Date(fromISO8601: e <| "close")!
-        )
     }
 }
 

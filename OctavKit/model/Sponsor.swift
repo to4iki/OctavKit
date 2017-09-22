@@ -1,36 +1,19 @@
 import Foundation
-import Himotoki
 
-public struct Sponsor {
-    public let id: Id<Sponsor>
+public struct Sponsor: Codable {
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case logoURL = "logo_url"
+        case linkURL = "url"
+        case groupName = "group_name"
+    }
+    
+    public let id: String
     public let name: String
     public let logoURL: URL
     public let linkURL: URL
     public let groupName: String
-}
-
-extension Sponsor: Encodable {
-    public func encodeJSON() -> [String : Any] {
-        return [
-            "id": id.value,
-            "name": name,
-            "logo_url": logoURL.absoluteString,
-            "url": linkURL.absoluteString,
-            "group_name": groupName
-        ]
-    }
-}
-
-extension Sponsor: Decodable {
-    public static func decode(_ e: Extractor) throws -> Sponsor {
-        return try Sponsor(
-            id: Id(value: e <| "id"),
-            name: e <| "name",
-            logoURL: URL(string: e <| "logo_url")!,
-            linkURL: URL(string: e <| "url")!,
-            groupName: e <| "group_name"
-        )
-    }
 }
 
 extension Sponsor: CustomStringConvertible {

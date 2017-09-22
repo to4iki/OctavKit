@@ -4,14 +4,14 @@
 Swift toolkit for the Octav API.
 
 ## Requirements
-- Swift 3.0 or later
+- Swift 4.0 or later
 - iOS 9.0 or later
 
 ## Installation
 #### [Carthage](https://github.com/Carthage/Carthage)
 - Insert `github "to4iki/OctavKit"` to your Cartfile.
 - Run `carthage bootstrap --platform iOS`.
-- Link your app with `OctavKit.framework` and `Himotoki.framework` and `Result.framework` in `Carthage/Build`.
+- Link your app with `OctavKit.framework` and `Result.framework` in `Carthage/Build`.
 
 ## Usage
 
@@ -22,7 +22,7 @@ OctavKit.setup(conferenceId: "YOUR_CONFERENCE_ID")
 // Set locale(option)
 OctavKit.setLocale(Locale.current)
 
-// Session receives an instance of a type that conforms to Request.
+// Sessions receives an instance of a type that conforms to Request.
 OctavKit.sessions { result in
     switch result {
     case .success(let response):
@@ -31,6 +31,12 @@ OctavKit.sessions { result in
         print("error: \(error)")
     }
 }
+
+// Sponsors receives an instance of a type that conforms to Request.
+OctavKit.sponsors { result in ...
+
+// Conference receives an instance of a type that conforms to Request.
+OctavKit.conference { result in ...
 ```
 
 [carthage-url]: https://github.com/Carthage/Carthage

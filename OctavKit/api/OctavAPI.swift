@@ -1,6 +1,3 @@
-import Foundation
-import Himotoki
-
 final class OctavAPI {
     struct Sessions: Request {
         typealias Response = [Session]
@@ -14,9 +11,8 @@ final class OctavAPI {
         }
 
         func response(from data: Data, urlResponse: URLResponse) throws -> Response {
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
             if case (200..<300)? = (urlResponse as? HTTPURLResponse)?.statusCode {
-                return try decodeArray(json)
+                return try JSONDecoder().decode(Response.self, from: data)
             } else {
                 // TODO: decode error object
                 throw OctavAPIError.apiError(NSError())
@@ -35,9 +31,8 @@ final class OctavAPI {
         }
 
         func response(from data: Data, urlResponse: URLResponse) throws -> Response {
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
             if case (200..<300)? = (urlResponse as? HTTPURLResponse)?.statusCode {
-                return try decodeArray(json)
+                return try JSONDecoder().decode(Response.self, from: data)
             } else {
                 // TODO: decode error object
                 throw OctavAPIError.apiError(NSError())

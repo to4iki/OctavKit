@@ -1,44 +1,30 @@
 import Foundation
-import Himotoki
 
 extension Conference {
-    public struct Venue {
-        public let id: Id<Venue>
+    public struct Venue: Codable {
+        enum CodingKeys: String, CodingKey {
+            case id
+            case name
+            case address
+            case placeId = "place_id"
+            case url
+            case rooms
+            case latitude
+            case longitude
+        }
+        
+        public let id: String
         public let name: String
         public let address: String
         public let placeId: String
         public let url: URL
-        public let location: (latitude: Double, longitude: Double)
         public let rooms: [Conference.Track.Room]
-    }
-}
-
-extension Conference.Venue: Encodable {
-    public func encodeJSON() -> [String: Any] {
-        return [
-            "id": id.value,
-            "name": name,
-            "address": address,
-            "place_id": placeId,
-            "url": url.absoluteString,
-            "latitude": location.latitude,
-            "longitude": location.longitude,
-            "rooms": rooms.map({ $0.encodeJSON() })
-        ]
-    }
-}
-
-extension Conference.Venue: Decodable {
-    public static func decode(_ e: Extractor) throws -> Conference.Venue {
-        return try Conference.Venue(
-            id: Id(value: e <| "id"),
-            name: e <| "name",
-            address: e <| "address",
-            placeId: e <| "place_id",
-            url: URL(string: e <| "url")!,
-            location: (latitude: e <| "latitude", longitude: e <| "longitude"),
-            rooms: e <|| "rooms"
-        )
+        private let latitude: Double
+        private let longitude: Double
+        
+        public var location: (latitude: Double, longitude: Double) {
+            return (latitude: latitude, longitude: longitude)
+        }
     }
 }
 
@@ -60,4 +46,3 @@ extension Conference.Venue: Hashable {
         return id.hashValue
     }
 }
-
