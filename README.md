@@ -4,7 +4,7 @@
 Swift toolkit for the Octav API.
 
 ## Requirements
-- Swift 4.0 or later
+- Swift 4.1 or later
 - iOS 9.0 or later
 
 ## Installation
