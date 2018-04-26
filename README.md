@@ -11,7 +11,6 @@ Swift toolkit for the Octav API.
 #### [Carthage](https://github.com/Carthage/Carthage)
 - Insert `github "to4iki/OctavKit"` to your Cartfile.
 - Run `carthage bootstrap --platform iOS`.
-- Link your app with `OctavKit.framework` and `Result.framework` in `Carthage/Build`.
 
 ## Usage
 
@@ -24,19 +23,21 @@ OctavKit.setLocale(Locale.current)
 
 // Sessions receives an instance of a type that conforms to Request.
 OctavKit.sessions { result in
-    switch result {
-    case .success(let response):
-        print("success: \(response)")
-    case .failure(let error):
+    switch (value, error) {
+    case (let value?, _):
+        print("success: \(value)")
+    case (_, let error?):
         print("error: \(error)")
+    case (.none, .none):
+        fatalError("unreachable")
     }
 }
 
 // Sponsors receives an instance of a type that conforms to Request.
-OctavKit.sponsors { result in ...
+OctavKit.sponsors { (value, error) in ...
 
 // Conference receives an instance of a type that conforms to Request.
-OctavKit.conference { result in ...
+OctavKit.conference { (value, error) in ...
 ```
 
 [carthage-url]: https://github.com/Carthage/Carthage

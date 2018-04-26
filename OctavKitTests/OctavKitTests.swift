@@ -12,14 +12,16 @@ final class OctavKitTests: XCTestCase {
     func testSessions() {
         let expectation = self.expectation(description: "sessions")
 
-        OctavKit.sessions { result in
-            switch result {
-            case .success(let response):
-                print("success count: \(response.count)")
-                print("success value: \(response)")
+        OctavKit.sessions { (value, error) in
+            switch (value, error) {
+            case (let value?, _):
+                print("success count: \(value.count)")
+                print("success value: \(value)")
                 expectation.fulfill()
-            case .failure(let error):
+            case (_, let error?):
                 print("error: \(error)")
+            case (.none, .none):
+                XCTFail("unreachable")
             }
         }
 
@@ -29,14 +31,16 @@ final class OctavKitTests: XCTestCase {
     func testSponsors() {
         let expectation = self.expectation(description: "sponsors")
 
-        OctavKit.sponsors { result in
-            switch result {
-            case .success(let response):
-                print("success count: \(response.count)")
-                print("success value: \(response)")
+        OctavKit.sponsors { (value, error) in
+            switch (value, error) {
+            case (let value?, _):
+                print("success count: \(value.count)")
+                print("success value: \(value)")
                 expectation.fulfill()
-            case .failure(let error):
+            case (_, let error?):
                 print("error: \(error)")
+            case (.none, .none):
+                XCTFail("unreachable")
             }
         }
 
@@ -46,13 +50,15 @@ final class OctavKitTests: XCTestCase {
     func testConference() {
         let expectation = self.expectation(description: "conference")
 
-        OctavKit.conference { result in
-            switch result {
-            case .success(let response):
-                print("success value: \(response)")
+        OctavKit.conference { (value, error) in
+            switch (value, error) {
+            case (let value?, _):
+                print("success value: \(value)")
                 expectation.fulfill()
-            case .failure(let error):
+            case (_, let error?):
                 print("error: \(error)")
+            case (.none, .none):
+                XCTFail("unreachable")
             }
         }
 

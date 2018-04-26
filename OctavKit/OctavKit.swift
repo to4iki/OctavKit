@@ -1,5 +1,4 @@
 import Foundation
-import Result
 
 /// OctavAPI Client
 public final class OctavKit {
@@ -16,15 +15,15 @@ public final class OctavKit {
         let task = session.dataTask(with: urlRequest) { (data, response, error) -> Void in
             switch (data, response, error) {
             case (_, _, let error?):
-                completion(Result(error: .connectionError(error)))
+                completion(nil, .connectionError(error))
             case let (data?, response?, _):
                 do {
                     let response = try request.response(from: data, urlResponse: response)
-                    completion(Result(value: response))
+                    completion(response, nil)
                 } catch let error as OctavAPIError {
-                    completion(Result(error: .apiError(error)))
+                    completion(nil, .apiError(error))
                 } catch {
-                    completion(Result(error: .responseParseError(error)))
+                    completion(nil, .responseParseError(error))
                 }
             default:
                 fatalError("invalid response combination.")
@@ -43,17 +42,17 @@ extension OctavKit {
         ParamtersHolder.setLocale(locale)
     }
 
-    public static func sessions(completion: @escaping (Result<[Session], OctavAPIError>) -> Void) {
+    public static func sessions(completion: @escaping ([Session]?, OctavAPIError?) -> Void) {
         let request = OctavAPI.Sessions()
         send(request, completion: completion)
     }
     
-    public static func sponsors(completion: @escaping (Result<[Sponsor], OctavAPIError>) -> Void) {
+    public static func sponsors(completion: @escaping ([Sponsor]?, OctavAPIError?) -> Void) {
         let request = OctavAPI.Sponsors()
         send(request, completion: completion)
     }
     
-    public static func conference(completion: @escaping (Result<Conference, OctavAPIError>) -> Void) {
+    public static func conference(completion: @escaping (Conference?, OctavAPIError?) -> Void) {
         let request = OctavAPI.Lookup()
         send(request, completion: completion)
     }

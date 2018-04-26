@@ -11,7 +11,6 @@
 		1E7EC5F71F21D99F00E43AD2 /* OctavKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E7EC5ED1F21D99F00E43AD2 /* OctavKit.framework */; };
 		1E7EC5FC1F21D99F00E43AD2 /* OctavKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7EC5FB1F21D99F00E43AD2 /* OctavKitTests.swift */; };
 		1E7EC5FE1F21D99F00E43AD2 /* OctavKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E7EC5F01F21D99F00E43AD2 /* OctavKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E8C89701F21DBBA00D2BB10 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896E1F21DBBA00D2BB10 /* Result.framework */; };
 		1E8C89871F21DC7D00D2BB10 /* OctavAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89731F21DC7D00D2BB10 /* OctavAPI.swift */; };
 		1E8C89881F21DC7D00D2BB10 /* OctavAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89741F21DC7D00D2BB10 /* OctavAPIError.swift */; };
 		1E8C89891F21DC7D00D2BB10 /* ParameterHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89751F21DC7D00D2BB10 /* ParameterHolder.swift */; };
@@ -27,10 +26,6 @@
 		1E8C89951F21DC7D00D2BB10 /* OctavKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89831F21DC7D00D2BB10 /* OctavKit.swift */; };
 		1E8C89961F21DC7D00D2BB10 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89851F21DC7D00D2BB10 /* HTTPMethod.swift */; };
 		1E8C89971F21DC7D00D2BB10 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8C89861F21DC7D00D2BB10 /* Request.swift */; };
-		1E8C89981F21DD4B00D2BB10 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896E1F21DBBA00D2BB10 /* Result.framework */; };
-		1E8C89991F21DD4B00D2BB10 /* Himotoki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */; };
-		4407ED391F260DF200A8137D /* Result.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896E1F21DBBA00D2BB10 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4407ED3A1F260DF200A8137D /* Himotoki.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,21 +38,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		4407ED381F260DC800A8137D /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4407ED3A1F260DF200A8137D /* Himotoki.framework in Copy Frameworks */,
-				4407ED391F260DF200A8137D /* Result.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1E5CE3911F7782C80088F648 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
 		1E7EC5ED1F21D99F00E43AD2 /* OctavKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OctavKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,8 +46,6 @@
 		1E7EC5F61F21D99F00E43AD2 /* OctavKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctavKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7EC5FB1F21D99F00E43AD2 /* OctavKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctavKitTests.swift; sourceTree = "<group>"; };
 		1E7EC5FD1F21D99F00E43AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E8C896E1F21DBBA00D2BB10 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Himotoki.framework; path = Carthage/Build/iOS/Himotoki.framework; sourceTree = "<group>"; };
 		1E8C89731F21DC7D00D2BB10 /* OctavAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPI.swift; sourceTree = "<group>"; };
 		1E8C89741F21DC7D00D2BB10 /* OctavAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctavAPIError.swift; sourceTree = "<group>"; };
 		1E8C89751F21DC7D00D2BB10 /* ParameterHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterHolder.swift; sourceTree = "<group>"; };
@@ -90,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8C89701F21DBBA00D2BB10 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8C89991F21DD4B00D2BB10 /* Himotoki.framework in Frameworks */,
 				1E7EC5F71F21D99F00E43AD2 /* OctavKit.framework in Frameworks */,
-				1E8C89981F21DD4B00D2BB10 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +93,6 @@
 		1E7EC5E31F21D99F00E43AD2 = {
 			isa = PBXGroup;
 			children = (
-				1E8C896D1F21DBBA00D2BB10 /* Frameworks */,
 				1E7EC5EF1F21D99F00E43AD2 /* OctavKit */,
 				1E7EC5FA1F21D99F00E43AD2 /* OctavKitTests */,
 				1E7EC5EE1F21D99F00E43AD2 /* Products */,
@@ -156,15 +130,6 @@
 				1E7EC5FB1F21D99F00E43AD2 /* OctavKitTests.swift */,
 			);
 			path = OctavKitTests;
-			sourceTree = "<group>";
-		};
-		1E8C896D1F21DBBA00D2BB10 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */,
-				1E8C896E1F21DBBA00D2BB10 /* Result.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1E8C89721F21DC7D00D2BB10 /* Api */ = {
@@ -230,7 +195,6 @@
 				1E7EC5E81F21D99F00E43AD2 /* Sources */,
 				1E7EC5E91F21D99F00E43AD2 /* Frameworks */,
 				1E7EC5EA1F21D99F00E43AD2 /* Headers */,
-				1E7EC5EB1F21D99F00E43AD2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -248,7 +212,6 @@
 				1E7EC5F21F21D99F00E43AD2 /* Sources */,
 				1E7EC5F31F21D99F00E43AD2 /* Frameworks */,
 				1E7EC5F41F21D99F00E43AD2 /* Resources */,
-				4407ED381F260DC800A8137D /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,13 +264,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1E7EC5EB1F21D99F00E43AD2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1E7EC5F41F21D99F00E43AD2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -488,10 +444,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -517,10 +470,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -539,16 +489,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -558,16 +505,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = OctavKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.OctavKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
