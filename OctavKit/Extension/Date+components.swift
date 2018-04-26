@@ -47,11 +47,11 @@ extension Date {
 }
 
 extension Date {
-    fileprivate var components: DateComponents {
+    private var components: DateComponents {
         return calendar.dateComponents([.year, .month, .weekday, .day, .hour, .minute, .second], from: self)
     }
 
-    fileprivate var calendar: Calendar {
+    private var calendar: Calendar {
         return Calendar(identifier: Calendar.Identifier.gregorian)
     }
 }

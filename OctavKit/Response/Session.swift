@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Session: Codable {
+public struct Session: Codable, CustomStringConvertible, Equatable, Hashable {
     private enum CodingKeys: String, CodingKey {
         case id
         case room
@@ -13,7 +13,7 @@ public struct Session: Codable {
         case materialLevel = "material_level"
     }
     
-    public enum Level: String, Codable {
+    public enum Level: String, Codable, Equatable, Hashable {
         case beginner
         case intermediate
         case advanced
@@ -32,7 +32,7 @@ public struct Session: Codable {
     public var endsOn: Date {
         return startsOn.add(second: duration)
     }
-    
+
     public init(from decoder: Decoder) throws {
         func strictString(_ value: String) -> String? {
             if value.isEmpty {
@@ -53,30 +53,21 @@ public struct Session: Codable {
         self.duration = try container.decode(Int.self, forKey: .duration)
         self.materialLevel = try container.decode(Level.self, forKey: .materialLevel)
     }
-}
 
-extension Session: CustomStringConvertible {
     public var description: String {
         return "Session(id: \(id), room: \(room), speaker: \(speaker), title: \(title), " +
         "abstract: \(abstract), memo: \(memo.debugDescription), startsOn: \(startsOn), duration: \(duration), " +
         "materialLevel: \(materialLevel.rawValue))"
     }
+
+    public var hashValue: Int {
+        return id.hashValue
+    }
+
 }
 
 extension Session: Comparable {
     public static func < (lhs: Session, rhs: Session) -> Bool {
         return lhs.startsOn < rhs.startsOn
-    }
-}
-
-extension Session: Equatable {
-    public static func == (lhs: Session, rhs: Session) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-
-extension Session: Hashable {
-    public var hashValue: Int {
-        return id.hashValue
     }
 }

@@ -1,7 +1,8 @@
 import Foundation
 
 extension Conference {
-    public struct Speaker: Codable, CustomStringConvertible, Equatable, Hashable {
+    // TODO: componentize with Speaker
+    public struct Staff: Codable, CustomStringConvertible, Equatable, Hashable {
         private enum CodingKeys: String, CodingKey {
             case id
             case nickname
@@ -15,14 +16,10 @@ extension Conference {
         public let firstname: String?
         public let lastname: String?
         public let avatarURL: URL
-
-        public var description: String {
-            return "Speaker(id: \(id), nickname: \(nickname), firstname: \(firstname.debugDescription), " +
-            "lastname: \(lastname.debugDescription), avatarURL: \(avatarURL))"
-        }
         
-        public static func == (lhs: Speaker, rhs: Speaker) -> Bool {
-            return lhs.id == rhs.id
+        public var description: String {
+            return "Staff(id: \(id), nickname: \(nickname), firstname: \(firstname.debugDescription), " +
+            "lastname: \(lastname.debugDescription), avatarURL: \(avatarURL))"
         }
         
         public var hashValue: Int {
@@ -30,3 +27,4 @@ extension Conference {
         }
     }
 }
+

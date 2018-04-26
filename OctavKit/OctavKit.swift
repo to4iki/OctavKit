@@ -11,7 +11,7 @@ public final class OctavKit {
 
     private init() {}
 
-    fileprivate static func send<T: Request>(_ request: T, completion: @escaping (Result<T.Response, OctavAPIError>) -> Void) {
+    private static func send<T: Request>(_ request: T, completion: @escaping (T.Response?, OctavAPIError?) -> Void) {
         let urlRequest = request.buildURLRequest()
         let task = session.dataTask(with: urlRequest) { (data, response, error) -> Void in
             switch (data, response, error) {

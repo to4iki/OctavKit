@@ -50,8 +50,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4407ED391F260DF200A8137D /* Result.framework in Copy Frameworks */,
 				4407ED3A1F260DF200A8137D /* Himotoki.framework in Copy Frameworks */,
+				4407ED391F260DF200A8137D /* Result.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,15 +98,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8C89981F21DD4B00D2BB10 /* Result.framework in Frameworks */,
 				1E8C89991F21DD4B00D2BB10 /* Himotoki.framework in Frameworks */,
 				1E7EC5F71F21D99F00E43AD2 /* OctavKit.framework in Frameworks */,
+				1E8C89981F21DD4B00D2BB10 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E1F90CC2092166C0095103A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1E8C89751F21DC7D00D2BB10 /* ParameterHolder.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		1E7EC5E31F21D99F00E43AD2 = {
 			isa = PBXGroup;
 			children = (
@@ -129,10 +137,11 @@
 		1E7EC5EF1F21D99F00E43AD2 /* OctavKit */ = {
 			isa = PBXGroup;
 			children = (
-				1E8C89721F21DC7D00D2BB10 /* api */,
-				1E8C89761F21DC7D00D2BB10 /* extension */,
-				1E8C89791F21DC7D00D2BB10 /* model */,
-				1E8C89841F21DC7D00D2BB10 /* request */,
+				1E8C89721F21DC7D00D2BB10 /* Api */,
+				1E1F90CC2092166C0095103A /* Core */,
+				1E8C89761F21DC7D00D2BB10 /* Extension */,
+				1E8C89841F21DC7D00D2BB10 /* Request */,
+				1E8C89791F21DC7D00D2BB10 /* Response */,
 				1E7EC5F11F21D99F00E43AD2 /* Info.plist */,
 				1E7EC5F01F21D99F00E43AD2 /* OctavKit.h */,
 				1E8C89831F21DC7D00D2BB10 /* OctavKit.swift */,
@@ -152,32 +161,31 @@
 		1E8C896D1F21DBBA00D2BB10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E8C896E1F21DBBA00D2BB10 /* Result.framework */,
 				1E8C896F1F21DBBA00D2BB10 /* Himotoki.framework */,
+				1E8C896E1F21DBBA00D2BB10 /* Result.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1E8C89721F21DC7D00D2BB10 /* api */ = {
+		1E8C89721F21DC7D00D2BB10 /* Api */ = {
 			isa = PBXGroup;
 			children = (
 				1E8C89731F21DC7D00D2BB10 /* OctavAPI.swift */,
 				1E8C89741F21DC7D00D2BB10 /* OctavAPIError.swift */,
-				1E8C89751F21DC7D00D2BB10 /* ParameterHolder.swift */,
 			);
-			path = api;
+			path = Api;
 			sourceTree = "<group>";
 		};
-		1E8C89761F21DC7D00D2BB10 /* extension */ = {
+		1E8C89761F21DC7D00D2BB10 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1E8C89781F21DC7D00D2BB10 /* Date+ISO8601.swift */,
 				1E8C89771F21DC7D00D2BB10 /* Date+components.swift */,
+				1E8C89781F21DC7D00D2BB10 /* Date+ISO8601.swift */,
 			);
-			path = extension;
+			path = Extension;
 			sourceTree = "<group>";
 		};
-		1E8C89791F21DC7D00D2BB10 /* model */ = {
+		1E8C89791F21DC7D00D2BB10 /* Response */ = {
 			isa = PBXGroup;
 			children = (
 				1E8C897A1F21DC7D00D2BB10 /* Conference.swift */,
@@ -189,16 +197,16 @@
 				1E8C89811F21DC7D00D2BB10 /* Track.swift */,
 				1E8C89821F21DC7D00D2BB10 /* Venue.swift */,
 			);
-			path = model;
+			path = Response;
 			sourceTree = "<group>";
 		};
-		1E8C89841F21DC7D00D2BB10 /* request */ = {
+		1E8C89841F21DC7D00D2BB10 /* Request */ = {
 			isa = PBXGroup;
 			children = (
 				1E8C89851F21DC7D00D2BB10 /* HTTPMethod.swift */,
 				1E8C89861F21DC7D00D2BB10 /* Request.swift */,
 			);
-			path = request;
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,22 +322,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8C89921F21DC7D00D2BB10 /* Sponsor.swift in Sources */,
-				1E8C89871F21DC7D00D2BB10 /* OctavAPI.swift in Sources */,
-				1E8C89941F21DC7D00D2BB10 /* Venue.swift in Sources */,
-				1E8C89951F21DC7D00D2BB10 /* OctavKit.swift in Sources */,
-				1E8C898F1F21DC7D00D2BB10 /* Speaker.swift in Sources */,
-				1E8C89971F21DC7D00D2BB10 /* Request.swift in Sources */,
-				1E8C89881F21DC7D00D2BB10 /* OctavAPIError.swift in Sources */,
-				1E8C89891F21DC7D00D2BB10 /* ParameterHolder.swift in Sources */,
 				1E8C898C1F21DC7D00D2BB10 /* Conference.swift in Sources */,
-				1E8C89911F21DC7D00D2BB10 /* Session.swift in Sources */,
-				1E5CE3921F7782C80088F648 /* Staff.swift in Sources */,
+				1E8C898A1F21DC7D00D2BB10 /* Date+components.swift in Sources */,
 				1E8C898B1F21DC7D00D2BB10 /* Date+ISO8601.swift in Sources */,
 				1E8C89961F21DC7D00D2BB10 /* HTTPMethod.swift in Sources */,
-				1E8C89931F21DC7D00D2BB10 /* Track.swift in Sources */,
+				1E8C89871F21DC7D00D2BB10 /* OctavAPI.swift in Sources */,
+				1E8C89881F21DC7D00D2BB10 /* OctavAPIError.swift in Sources */,
+				1E8C89951F21DC7D00D2BB10 /* OctavKit.swift in Sources */,
+				1E8C89891F21DC7D00D2BB10 /* ParameterHolder.swift in Sources */,
+				1E8C89971F21DC7D00D2BB10 /* Request.swift in Sources */,
 				1E8C89901F21DC7D00D2BB10 /* Schedule.swift in Sources */,
-				1E8C898A1F21DC7D00D2BB10 /* Date+components.swift in Sources */,
+				1E8C89911F21DC7D00D2BB10 /* Session.swift in Sources */,
+				1E8C898F1F21DC7D00D2BB10 /* Speaker.swift in Sources */,
+				1E8C89921F21DC7D00D2BB10 /* Sponsor.swift in Sources */,
+				1E5CE3921F7782C80088F648 /* Staff.swift in Sources */,
+				1E8C89931F21DC7D00D2BB10 /* Track.swift in Sources */,
+				1E8C89941F21DC7D00D2BB10 /* Venue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

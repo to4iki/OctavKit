@@ -1,4 +1,4 @@
-public struct Conference: Codable {
+public struct Conference: Codable, CustomStringConvertible, Equatable, Hashable {
     private enum CodingKeys: String, CodingKey {
         case id
         case title
@@ -20,22 +20,12 @@ public struct Conference: Codable {
     public let venues: [Venue]
     public let sponsors: [Sponsor]
     public let tracks: [Track]
-}
 
-extension Conference: CustomStringConvertible {
     public var description: String {
         return "Conference(id: \(id), title: \(title), about: \(about), contact: \(contact), schedules: \(schedules), " +
         "staffs: \(staffs), venues: \(venues), sponsors: \(sponsors), tracks: \(tracks))"
     }
-}
 
-extension Conference: Equatable {
-    public static func == (lhs: Conference, rhs: Conference) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-
-extension Conference: Hashable {
     public var hashValue: Int {
         return id.hashValue
     }

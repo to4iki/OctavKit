@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Sponsor: Codable {
+public struct Sponsor: Codable, CustomStringConvertible, Equatable, Hashable {
     private enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -14,23 +14,9 @@ public struct Sponsor: Codable {
     public let logoURL: URL
     public let linkURL: URL
     public let groupName: String
-}
 
-extension Sponsor: CustomStringConvertible {
     public var description: String {
         return "Sponsor(id: \(id), name: \(name), logoURL: \(logoURL), " +
         "linkURL: \(linkURL), groupName: \(groupName))"
-    }
-}
-
-extension Sponsor: Equatable {
-    public static func == (lhs: Sponsor, rhs: Sponsor) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-
-extension Sponsor: Hashable {
-    public var hashValue: Int {
-        return id.hashValue
     }
 }
