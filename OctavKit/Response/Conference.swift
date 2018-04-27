@@ -13,7 +13,7 @@ public struct Conference: Codable, CustomStringConvertible, Equatable, Hashable 
     
     public let id: String
     public let title: String
-    public let about: String
+    public let about: String?
     public let contact: String
     public let schedules: [Schedule]
     public let staffs: [Staff]
@@ -22,7 +22,7 @@ public struct Conference: Codable, CustomStringConvertible, Equatable, Hashable 
     public let tracks: [Track]
 
     public var description: String {
-        return "Conference(id: \(id), title: \(title), about: \(about), contact: \(contact), schedules: \(schedules), " +
+        return "Conference(id: \(id), title: \(title), about: \(about.debugDescription), contact: \(contact), schedules: \(schedules), " +
         "staffs: \(staffs), venues: \(venues), sponsors: \(sponsors), tracks: \(tracks))"
     }
 

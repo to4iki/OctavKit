@@ -22,7 +22,7 @@ OctavKit.setup(conferenceId: "YOUR_CONFERENCE_ID")
 OctavKit.setLocale(Locale.current)
 
 // Sessions receives an instance of a type that conforms to Request.
-OctavKit.sessions { result in
+OctavKit.sessions { (value, error) in
     switch (value, error) {
     case (let value?, _):
         print("success: \(value)")
