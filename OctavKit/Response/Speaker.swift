@@ -20,9 +20,5 @@ extension Conference {
             return "Speaker(id: \(id), nickname: \(nickname), firstname: \(firstname.debugDescription), " +
             "lastname: \(lastname.debugDescription), avatarURL: \(avatarURL))"
         }
-        
-        public var hashValue: Int {
-            return id.hashValue
-        }
     }
 }

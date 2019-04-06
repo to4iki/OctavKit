@@ -25,8 +25,4 @@ public struct Conference: Codable, CustomStringConvertible, Equatable, Hashable 
         return "Conference(id: \(id), title: \(title), about: \(about.debugDescription), contact: \(contact), schedules: \(schedules), " +
         "staffs: \(staffs), venues: \(venues), sponsors: \(sponsors), tracks: \(tracks))"
     }
-
-    public var hashValue: Int {
-        return id.hashValue
-    }
 }

@@ -42,7 +42,4 @@ extension Conference.Venue: Equatable {
 }
 
 extension Conference.Venue: Hashable {
-    public var hashValue: Int {
-        return id.hashValue
-    }
 }

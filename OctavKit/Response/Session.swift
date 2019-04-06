@@ -59,11 +59,6 @@ public struct Session: Codable, CustomStringConvertible, Equatable, Hashable {
         "abstract: \(abstract), memo: \(memo.debugDescription), startsOn: \(startsOn), duration: \(duration), " +
         "materialLevel: \(materialLevel.rawValue))"
     }
-
-    public var hashValue: Int {
-        return id.hashValue
-    }
-
 }
 
 extension Session: Comparable {
