@@ -12,16 +12,14 @@ final class OctavKitTests: XCTestCase {
     func testSessions() {
         let expectation = self.expectation(description: "sessions")
 
-        OctavKit.sessions { (value, error) in
-            switch (value, error) {
-            case (let value?, _):
+        OctavKit.sessions { result in
+            switch result {
+            case .success(let value):
                 print("success count: \(value.count)")
                 print("success value: \(value)")
                 expectation.fulfill()
-            case (_, let error?):
+            case .failure(let error):
                 print("error: \(error)")
-            case (.none, .none):
-                XCTFail("unreachable")
             }
         }
 
@@ -31,16 +29,14 @@ final class OctavKitTests: XCTestCase {
     func testSponsors() {
         let expectation = self.expectation(description: "sponsors")
 
-        OctavKit.sponsors { (value, error) in
-            switch (value, error) {
-            case (let value?, _):
+        OctavKit.sponsors { result in
+            switch result {
+            case .success(let value):
                 print("success count: \(value.count)")
                 print("success value: \(value)")
                 expectation.fulfill()
-            case (_, let error?):
+            case .failure(let error):
                 print("error: \(error)")
-            case (.none, .none):
-                XCTFail("unreachable")
             }
         }
 
@@ -50,15 +46,13 @@ final class OctavKitTests: XCTestCase {
     func testConference() {
         let expectation = self.expectation(description: "conference")
 
-        OctavKit.conference { (value, error) in
-            switch (value, error) {
-            case (let value?, _):
+        OctavKit.conference { result in
+            switch result {
+            case .success(let value):
                 print("success value: \(value)")
                 expectation.fulfill()
-            case (_, let error?):
+            case .failure(let error):
                 print("error: \(error)")
-            case (.none, .none):
-                XCTFail("unreachable")
             }
         }
 
